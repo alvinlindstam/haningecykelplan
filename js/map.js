@@ -48,4 +48,12 @@ $(function(){
 	$(".initDrawInteraction").click(function(event){
 		addDrawInteraction($(event.target).data("geomtype"))		
 	});	
+
+	var json_textarea = $("#json_string")
+	var update_json_textarea = function(){
+		var geojson = (new ol.format.GeoJSON()).writeFeatures(source.getFeatures());
+		json_textarea.val("var cykelplan_features = " + JSON.stringify(geojson, null, 4));
+	};
+	source.on('change', update_json_textarea);
+	update_json_textarea();
 });
