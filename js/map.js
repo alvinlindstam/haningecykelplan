@@ -2,7 +2,13 @@ $(function(){
 	var raster = new ol.layer.Tile({
 		source: new ol.source.MapQuest({layer: 'sat'})
 	});
-	
+	var bing = new ol.layer.Tile({
+      source: new ol.source.BingMaps({
+      	// todo: fix own key for server
+      	key: 'Ak-dzM4wZjSqTlzveKz5u0d4IQ4bRzVI309GxmkgSVr1ewS6iPSrOvOKhA-CJlm3',
+        imagerySet: 'Aerial'
+      })
+    })
 	// existing features expected to be contained in cykelplan_features variable
 	// todo: load async on server	
 	source = new ol.source.GeoJSON((cykelplan_features));	
@@ -12,7 +18,7 @@ $(function(){
 	});
 
 	var map = new ol.Map({
-	  	layers: [raster, layer],
+	  	layers: [bing, layer],
 	  	target: 'map'	  	
 	});
 
@@ -52,7 +58,7 @@ $(function(){
 	var json_textarea = $("#json_string")
 	var update_json_textarea = function(){
 		var geojson = (new ol.format.GeoJSON()).writeFeatures(source.getFeatures());
-		json_textarea.val("var cykelplan_features = " + JSON.stringify(geojson, null, 4));
+		json_textarea.val("var cykelplan_features = " + JSON.stringify({"object":geojson}, null, 4));
 	};
 	source.on('change', update_json_textarea);
 	update_json_textarea();
