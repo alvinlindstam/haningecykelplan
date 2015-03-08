@@ -44,7 +44,8 @@ $(function(){
 	  	});
 	  	map.addInteraction(draw);
 		draw.on('drawend', function(ev){
-	  		source.addFeature(ev.feature);	  		  
+			ev.feature.setProperties({'id': prompt("Ange ID")})
+	  		source.addFeature(ev.feature);
 	  		setTimeout(function(){
 	  			map.removeInteraction(draw);
 	  		}, 200);	
@@ -62,4 +63,36 @@ $(function(){
 	};
 	source.on('change', update_json_textarea);
 	update_json_textarea();
+
+
+
+	var element = document.getElementById('popup');
+
+	var popup = new ol.Overlay({
+	  element: element,
+	  positioning: 'bottom-center',
+	  stopEvent: false
+	});
+	map.addOverlay(popup);
+
+	// display popup on click
+	map.on('click', function(evt) {
+		var element = document.getElementById('popup');
+	  	var feature = map.forEachFeatureAtPixel(evt.pixel,
+	      	function(feature, layer) {
+	        	return feature;
+	    	}
+	    );
+	  	if (feature) {
+		    var geometry = feature.getGeometry();	    
+		    var properties = feature.getProperties();
+		    $(element).find('table').html("")	    
+		    for(key in properties){
+		    	$(element).find('table').append('<tr><td>'+key+'</td><td>'+properties[key]+"</td></tr>");
+		    }		    
+		    popup.setPosition(geometry.getCoordinates()[0]);
+	  	} else {
+	  		popup.setPosition();	    	
+	  	}
+	});
 });
