@@ -797,6 +797,25 @@ var cykelplan_features = {
                 "properties": {
                     "id": "12"
                 }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                        [
+                            2023558.5092690608,
+                            8221774.907154688
+                        ],
+                        [
+                            2023815.2899109563,
+                            8221571.274134021
+                        ]
+                    ]
+                },
+                "properties": {
+                    "id": "13"
+                }
             }
         ]
     }
