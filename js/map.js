@@ -60,6 +60,9 @@ $(function(){
 	var json_textarea = $("#json_string")
 	var update_json_textarea = function(){
 		var geojson = (new ol.format.GeoJSON()).writeFeatures(source.getFeatures());
+		geojson.features.sort(function(a,b){			
+			return parseFloat(a.properties.id) - parseFloat(b.properties.id)
+		});
 		json_textarea.val("var cykelplan_features = " + JSON.stringify({"object":geojson}, null, 4));
 	};
 	source.on('change', update_json_textarea);
