@@ -6,7 +6,8 @@ $(function(){
       source: new ol.source.BingMaps({
       	// todo: fix own key for server
       	key: 'Ak-dzM4wZjSqTlzveKz5u0d4IQ4bRzVI309GxmkgSVr1ewS6iPSrOvOKhA-CJlm3',
-        imagerySet: 'Aerial'
+        //imagerySet: 'Aerial'
+        imagerySet: 'AerialWithLabels'
       })
     })
 	// existing features expected to be contained in cykelplan_features variable
@@ -76,7 +77,7 @@ $(function(){
 	map.addOverlay(popup);
 
 	// display popup on click
-	map.on('click', function(evt) {
+	/*map.on('singleclick', function(evt) {
 		var element = document.getElementById('popup');
 	  	var feature = map.forEachFeatureAtPixel(evt.pixel,
 	      	function(feature, layer) {
@@ -94,5 +95,5 @@ $(function(){
 	  	} else {
 	  		popup.setPosition();	    	
 	  	}
-	});
+	});*/
 });
