@@ -51,7 +51,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "1"
+                    "id": "1",
+                    "neigborhood": "Vendelsö",
+                    "path_description": "Bondvägen mellan Lillängsvägen och Österängsvägen",
+                    "planned_work": "Gång-cykelbana, Breddning av körbana.",
+                    "length": 1500,
+                    "cost": 5200000,
+                    "comment": "",
+                    "priority": 1
                 }
             },
             {
@@ -83,7 +90,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "2"
+                    "id": "2",
+                    "neigborhood": "Vendelsö",
+                    "path_description": "Lillängsvägen mellan Bondvägen och Grindstuvägen",
+                    "planned_work": "Gång-cykelbana, Breddning av körbana.",
+                    "length": 1000,
+                    "cost": 3500000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -110,7 +124,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "3"
+                    "id": "3",
+                    "neigborhood": "Vendelsö",
+                    "path_description": "Grindstuvägen mellan Gudöbroleden och Lillängsvägen",
+                    "planned_work": "Bredda befintlig gångbana",
+                    "length": 780,
+                    "cost": 1150000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -123,7 +144,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "4"
+                    "id": "4",
+                    "neigborhood": "Vendelsö",
+                    "path_description": "Vendelsö Gårdsväg mellan Rättarvägen och Vendelsö Allé",
+                    "planned_work": "Bredda befintlig gångbana",
+                    "length": 260,
+                    "cost": 400000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -140,7 +168,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "5"
+                    "id": "5",
+                    "neigborhood": "Vendelsö",
+                    "path_description": "Östra Strandvägen mellan Vendelsö Gårdsväg och Gårdens bad",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 180,
+                    "cost": 650000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -153,7 +188,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "6"
+                    "id": "6",
+                    "neigborhood": "Vendelsö",
+                    "path_description": "Vendelsö Allé mellan Vendelsö Gårdsväg och Hammarvägen/Stallvägen",
+                    "planned_work": "Gång-cykelbana på befintlig körbana",
+                    "length": 125,
+                    "cost": 400000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -179,7 +221,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "7"
+                    "id": "7",
+                    "neigborhood": "Vendelsö",
+                    "path_description": "Norrbyvägen/Vendelsö Allé mellan Backvägen och Hagtornsvägen",
+                    "planned_work": "Bredda befintlig gång- bana",
+                    "length": 560,
+                    "cost": 850000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -198,7 +247,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "8"
+                    "id": "8",
+                    "neigborhood": "Vendelsö",
+                    "path_description": "Sågenvägen mellan Vendelsö Skolväg och Sågdalsvändan",
+                    "planned_work": "Bredda befintlig gångbana",
+                    "length": 370,
+                    "cost": 550000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -226,7 +282,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "9"
+                    "id": "9",
+                    "neigborhood": "Vendelsö",
+                    "path_description": "Vendelsö Skolväg mellan Esplanaden och Sågen",
+                    "planned_work": "Bredda befintlig gångbana",
+                    "length": 960,
+                    "cost": 1400000,
+                    "comment": "",
+                    "priority": 1
                 }
             },
             {
@@ -245,7 +308,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "10"
+                    "id": "10",
+                    "neigborhood": "Vendelsö",
+                    "path_description": "Lillängsvägen mellan Grindstuvägen och Tistelvägen",
+                    "planned_work": "Gång-cykelbana, Breddning av körbana.",
+                    "length": 240,
+                    "cost": 800000,
+                    "comment": "",
+                    "priority": 1
                 }
             },
             {
@@ -261,7 +331,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "11"
+                    "id": "11",
+                    "neigborhood": "Vendelsö",
+                    "path_description": "Skomakarvägen mellan Vårdcentralen och Lyckebyvägen",
+                    "planned_work": "Gång-cykelbana, Breddning av körbana.",
+                    "length": 210,
+                    "cost": 700000,
+                    "comment": "",
+                    "priority": 1
                 }
             },
             {
@@ -297,7 +374,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "12"
+                    "id": "12",
+                    "neigborhood": "Vendelsö",
+                    "path_description": "Lyckebyvägen mellan Skomakarvägen och Lyckebyvägen 97",
+                    "planned_work": "Gång-cykelbana, Breddning av körbana.",
+                    "length": 1500,
+                    "cost": 5200000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -310,7 +394,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "13"
+                    "id": "13",
+                    "neigborhood": "Vendelsö",
+                    "path_description": "Vendelsömalmsvägen mellan Gudöbroleden och Vendelsö Skolväg",
+                    "planned_work": "Ny gc-väg och breddning av befintlig gångbana",
+                    "length": 210,
+                    "cost": 800000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -346,7 +437,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "14"
+                    "id": "14",
+                    "neigborhood": "Norrby",
+                    "path_description": "Torfastleden mellan Gudöbroleden och Nynäsvägen",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 2100,
+                    "cost": 8300000,
+                    "comment": "",
+                    "priority": 1
                 }
             },
             {
@@ -362,7 +460,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "15"
+                    "id": "15",
+                    "neigborhood": "Vendelsö",
+                    "path_description": "Gc-väg mellan Birgittavägen och Elsebergsvägen",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 260,
+                    "cost": 1000000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -383,7 +488,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "16"
+                    "id": "16",
+                    "neigborhood": "Vendelsö",
+                    "path_description": "Gc-väg mellan Henriksbergsvägen och Klenavägen",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 300,
+                    "cost": 1200000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -398,7 +510,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "17"
+                    "id": "17",
+                    "neigborhood": "Vendelsö",
+                    "path_description": "Befintlig stig mellan Hagtornsbadet och Västra Strandvägen",
+                    "planned_work": "Förbättra underlaget, dränera",
+                    "length": 255,
+                    "cost": 250000,
+                    "comment": "",
+                    "priority": 1
                 }
             },
             {
@@ -422,7 +541,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "18"
+                    "id": "18",
+                    "neigborhood": "Vega",
+                    "path_description": "Nordenskiölds Väg mellan Jökelvägen och Nynäsvägen",
+                    "planned_work": "Bredda befintlig gångbana",
+                    "length": 570,
+                    "cost": 850000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -442,7 +568,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "19"
+                    "id": "19",
+                    "neigborhood": "Vega",
+                    "path_description": "Nynäsvägen mellan Lignells Väg och Nordenskiölds Väg breddning därefter ny cykelbana fram till befintlig gc-väg i Huddinge kommun.",
+                    "planned_work": "Bredda befintlig gångbana samt ny cykelbana",
+                    "length": 690,
+                    "cost": 2000000,
+                    "comment": "Delvis Huddinge kommun",
+                    "priority": 2
                 }
             },
             {
@@ -455,7 +588,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "20"
+                    "id": "20",
+                    "neigborhood": "Vega",
+                    "path_description": "Vardövägen mellan Nordenskiölds Väg och Brusewitz Väg",
+                    "planned_work": "Bredda befintlig gångbana",
+                    "length": 300,
+                    "cost": 450000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -478,7 +618,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "21"
+                    "id": "21",
+                    "neigborhood": "Handen",
+                    "path_description": "Gc-väg mellan Port 73 (Coop) och Söderby Parkväg",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 290,
+                    "cost": 1100000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -491,7 +638,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "22"
+                    "id": "22",
+                    "neigborhood": "Handen",
+                    "path_description": "Gc-väg mellan ICA-Maxi och Söderby Parkväg",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 154,
+                    "cost": 600000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -506,7 +660,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "23"
+                    "id": "23",
+                    "neigborhood": "Norrby",
+                    "path_description": "Söderbyleden mellan Torfastleden och befintlig gc-väg",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 360,
+                    "cost": 1400000,
+                    "comment": "",
+                    "priority": 1
                 }
             },
             {
@@ -530,7 +691,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "24"
+                    "id": "24",
+                    "neigborhood": "Vendelsö",
+                    "path_description": "Huldabergsvägen",
+                    "planned_work": "Gång-cykelbana på delvis befintlig körbana och breddning",
+                    "length": 470,
+                    "cost": 1500000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -549,7 +717,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "25"
+                    "id": "25",
+                    "neigborhood": "Vendelsö",
+                    "path_description": "Vendelsömalmsvägen mellan Evertbergsvägen och Tyrestavägen",
+                    "planned_work": "Gång-cykelbana, Breddning av körbana.",
+                    "length": 410,
+                    "cost": 1500000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -563,7 +738,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "26"
+                    "id": "26",
+                    "neigborhood": "Vendelsö",
+                    "path_description": "Vendelsövägen mellan Söderbyleden och infart till Vendelsövägen 49-59",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 75,
+                    "cost": 300000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -583,7 +765,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "27"
+                    "id": "27",
+                    "neigborhood": "Handen",
+                    "path_description": "Dalarövägen lokalgatan mellan Handens sjukhus och Dalarövägen",
+                    "planned_work": "Bredda befintlig gång- bana",
+                    "length": 210,
+                    "cost": 300000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -601,7 +790,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "28"
+                    "id": "28",
+                    "neigborhood": "Handen",
+                    "path_description": "Söderbymalmsvägen mellan Dalarövägen och befintlig gång- och cykelbana",
+                    "planned_work": "Bredda befintlig gångbana",
+                    "length": 205,
+                    "cost": 300000,
+                    "comment": "",
+                    "priority": 1
                 }
             },
             {
@@ -632,7 +828,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "29"
+                    "id": "29",
+                    "neigborhood": "Handen",
+                    "path_description": "Eskilsvägen",
+                    "planned_work": "Hela Eskilsvägen kräver ombyggnad",
+                    "length": 700,
+                    "cost": 20000000,
+                    "comment": "Se förstudie om Eskilsvägen",
+                    "priority": 2
                 }
             },
             {
@@ -647,7 +850,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "30"
+                    "id": "30",
+                    "neigborhood": "Handen",
+                    "path_description": "Dalarövägens norra sida mellan Eskilsvägen och befintlig gc-väg",
+                    "planned_work": "Bredda befintlig gångbana",
+                    "length": 240,
+                    "cost": 350000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -663,7 +873,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "31"
+                    "id": "31",
+                    "neigborhood": "Handen",
+                    "path_description": "Sleipnervägen",
+                    "planned_work": "Bredda befintlig gångbana",
+                    "length": 720,
+                    "cost": 1000000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -691,7 +908,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "32"
+                    "id": "32",
+                    "neigborhood": "Handen",
+                    "path_description": "Torvallavägen mellan Torvalla sporthall och Vallavägen",
+                    "planned_work": "Bredda befintlig gångbana",
+                    "length": 640,
+                    "cost": 950000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -711,7 +935,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "33"
+                    "id": "33",
+                    "neigborhood": "Handen",
+                    "path_description": "Gc-väg mellan Örnens Väg och Sommarvägen",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 165,
+                    "cost": 700000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -732,7 +963,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "34"
+                    "id": "34",
+                    "neigborhood": "Handen",
+                    "path_description": "Gc-väg öster om Slätmossens naturpark",
+                    "planned_work": "Befintlig grusväg beläggs",
+                    "length": 820,
+                    "cost": 2600000,
+                    "comment": "",
+                    "priority": 1
                 }
             },
             {
@@ -747,7 +985,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "35"
+                    "id": "35",
+                    "neigborhood": "Brandb.",
+                    "path_description": "Dalarövägen mellan Klockarleden och bef gc-väg på Kilowattvägen",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 320,
+                    "cost": 950000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -789,7 +1034,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "36"
+                    "id": "36",
+                    "neigborhood": "Brandb.",
+                    "path_description": "Dalarövägen mellan Kilowattvägen och väg 227 Dalarövägen",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 2450,
+                    "cost": 9800000,
+                    "comment": "Kan stängas för biltrafik om Söderbyleden förlängs mot Dalarövägen",
+                    "priority": 2
                 }
             },
             {
@@ -810,7 +1062,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "37"
+                    "id": "37",
+                    "neigborhood": "Jordbro",
+                    "path_description": "Gc-väg mellan Jordbrotorpsvägen och bef. gc-väg längs med Haningeleden",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 425,
+                    "cost": 1700000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -829,7 +1088,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "38"
+                    "id": "38",
+                    "neigborhood": "Jordbro",
+                    "path_description": "Väg 259 Haningeleden mellan Rudanvägen och kommungränsen till Huddinge",
+                    "planned_work": "Ny friliggande gång- cykelbana",
+                    "length": 1600,
+                    "cost": 6400000,
+                    "comment": "Vägverkets väg",
+                    "priority": 3
                 }
             },
             {
@@ -850,7 +1116,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "39"
+                    "id": "39",
+                    "neigborhood": "Brandb.",
+                    "path_description": "Klockarleden mellan Vattumannens Gata och bef. gc-väg vid Stora Hundens Gata",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 560,
+                    "cost": 2300000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -867,7 +1140,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "40"
+                    "id": "40",
+                    "neigborhood": "Brandb.",
+                    "path_description": "Klockarleden/Brandbergsleden mellan bef. gc-väg vid Stora Hundens Gata och bef. gc-väg Valfiskens Gata",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 350,
+                    "cost": 1400000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -880,7 +1160,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "41"
+                    "id": "41",
+                    "neigborhood": "Jordbro",
+                    "path_description": "Silovägen Gång-cykelbana,",
+                    "planned_work": "Breddning av körbana.",
+                    "length": 640,
+                    "cost": 2200000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -893,7 +1180,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "42"
+                    "id": "42",
+                    "neigborhood": "Jordbro",
+                    "path_description": "Traversvägen mellan Cementvägen och Dåntorpsvägen Gång-cykelbana,",
+                    "planned_work": "Breddning av körbana.",
+                    "length": 330,
+                    "cost": 1100000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -912,7 +1206,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "43"
+                    "id": "43",
+                    "neigborhood": "Jordbro",
+                    "path_description": "Rörvägen mellan Traversvägen och befintlig gångcykelbana",
+                    "planned_work": "Gång-cykelbana, Breddning av körbana.",
+                    "length": 630,
+                    "cost": 2200000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -931,7 +1232,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "44"
+                    "id": "44",
+                    "neigborhood": "Jordbro",
+                    "path_description": "Armaturvägen",
+                    "planned_work": "Gång-cykelbana, Breddning av körbana.",
+                    "length": 800,
+                    "cost": 2800000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -1036,7 +1344,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "45"
+                    "id": "45",
+                    "neigborhood": "Landsb",
+                    "path_description": "Väg 227 Dalarövägen mellan Dalarölänken och Karlavägen i Dalarö",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 17800,
+                    "cost": 71500000,
+                    "comment": "Vägverkets väg",
+                    "priority": 3
                 }
             },
             {
@@ -1064,7 +1379,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "46"
+                    "id": "46",
+                    "neigborhood": "Landsb",
+                    "path_description": "Väg 561 Österhaningevägen mellan befintlig gc-väg till Dalarövägen",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 3400,
+                    "cost": 13600000,
+                    "comment": "Vägverkets väg",
+                    "priority": 2
                 }
             },
             {
@@ -1087,7 +1409,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "47"
+                    "id": "47",
+                    "neigborhood": "V-H",
+                    "path_description": "Gc-väg mellan Åbylundsvägen och Björnvägen",
+                    "planned_work": "Befintlig grusad stig byggs om till gc-väg",
+                    "length": 330,
+                    "cost": 1200000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -1115,7 +1444,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "48"
+                    "id": "48",
+                    "neigborhood": "V-H",
+                    "path_description": "Nytorpsvägen mellan Åbylundsvägen och Tungelstavägen",
+                    "planned_work": "Bredda befintlig gångbana",
+                    "length": 1100,
+                    "cost": 1600000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -1129,7 +1465,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "49"
+                    "id": "49",
+                    "neigborhood": "V-H",
+                    "path_description": "Åbyvägen",
+                    "planned_work": "Gång-cykelbana på befintlig körbana",
+                    "length": 300,
+                    "cost": 600000,
+                    "comment": "",
+                    "priority": 1
                 }
             },
             {
@@ -1146,7 +1489,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "50"
+                    "id": "50",
+                    "neigborhood": "V-H",
+                    "path_description": "Väg 257 Tungelstavägen mellan Ringvägen och Åbyplan",
+                    "planned_work": "Bredda befintlig gångbana",
+                    "length": 280,
+                    "cost": 400000,
+                    "comment": "Vägverkets väg",
+                    "priority": 2
                 }
             },
             {
@@ -1161,7 +1511,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "51"
+                    "id": "51",
+                    "neigborhood": "V-H",
+                    "path_description": "Vintervägen mellan Nynäsvägen och Floravägen",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 220,
+                    "cost": 550000,
+                    "comment": "",
+                    "priority": 1
                 }
             },
             {
@@ -1175,7 +1532,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "52"
+                    "id": "52",
+                    "neigborhood": "V-H",
+                    "path_description": "Floravägen mellan Vintervägen och Nordanvägen",
+                    "planned_work": "Gång-cykelbana på befintlig körbana",
+                    "length": 185,
+                    "cost": 600000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -1199,7 +1563,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "53"
+                    "id": "53",
+                    "neigborhood": "Tungelsta",
+                    "path_description": "Gc-väg mellan Tungelstavägen förbi Håga industriområde och över järnvägsspår",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 580,
+                    "cost": 8000000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -1215,7 +1586,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "54"
+                    "id": "54",
+                    "neigborhood": "Tungelsta",
+                    "path_description": "Mulstavägen mellan Tungelstavägen och Gökvägen i samband med ny väg",
+                    "planned_work": "Gång-cykelbana, Breddning av körbana.",
+                    "length": 520,
+                    "cost": 1800000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -1247,7 +1625,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "55"
+                    "id": "55",
+                    "neigborhood": "Tungelsta",
+                    "path_description": "Allévägen/Skogsvägen/Långvägen mellan Stavsvägen och Mulstavägen",
+                    "planned_work": "Gång-cykelbana, Breddning av körbana.",
+                    "length": 1350,
+                    "cost": 4700000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -1263,7 +1648,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "56"
+                    "id": "56",
+                    "neigborhood": "Tungelsta",
+                    "path_description": "Gc-väg mellan Åvägen och Nederstaleden, längs med järnvägen",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 1850,
+                    "cost": 7400000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -1276,7 +1668,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "57"
+                    "id": "57",
+                    "neigborhood": "Tungelsta",
+                    "path_description": "Gc-väg mellan Stabergsvägen och önskad gc-väg längs järnvägen",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 90,
+                    "cost": 350000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -1336,7 +1735,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "59"
+                    "id": "59",
+                    "neigborhood": "Landsb",
+                    "path_description": "Väg 560 Vitsåvägen mellan Nynäsvägen och Årsta Havsbad",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 5700,
+                    "cost": 22900000,
+                    "comment": "Vägverkets väg",
+                    "priority": 1
                 }
             },
             {
@@ -1358,7 +1764,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "60"
+                    "id": "60",
+                    "neigborhood": "Tungelsta",
+                    "path_description": "Allévägen mellan Södertäljevägen och Stavsvägen",
+                    "planned_work": "Gång-cykelbana, Breddning av körbana.",
+                    "length": 930,
+                    "cost": 3200000,
+                    "comment": "",
+                    "priority": 1
                 }
             },
             {
@@ -1376,7 +1789,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "61"
+                    "id": "61",
+                    "neigborhood": "Tungelsta",
+                    "path_description": "Gc-väg mellan Hammarbergsvägen och Runvägen",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 400,
+                    "cost": 1600000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -1394,7 +1814,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "62b"
+                    "id": "62b",
+                    "neigborhood": "Tungelsta",
+                    "path_description": "Gc-väg mellan Allévägen och Hammarbergsvägen",
+                    "planned_work": "Gång-cykelbana, Breddning av körbana.",
+                    "length": 100,
+                    "cost": 350000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -1413,7 +1840,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "62a"
+                    "id": "62a",
+                    "neigborhood": "Tungelsta",
+                    "path_description": "Hammarbergsvägen mellan Tungelstavägen och ny bro över järnvägen",
+                    "planned_work": "Gång-cykelbana, Breddning av körbana.",
+                    "length": 610,
+                    "cost": 2200000,
+                    "comment": "",
+                    "priority": 1
                 }
             },
             {
@@ -1428,7 +1862,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "63"
+                    "id": "63",
+                    "neigborhood": "Tungelsta",
+                    "path_description": "Tungelstavägen mellan Kvarnvägen och Södertäljevägen",
+                    "planned_work": "Gång-cykelbana på befintlig körbana",
+                    "length": 205,
+                    "cost": 600000,
+                    "comment": "",
+                    "priority": 1
                 }
             },
             {
@@ -1446,7 +1887,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "64"
+                    "id": "64",
+                    "neigborhood": "Tungelsta",
+                    "path_description": "Kvarnvägen mellan Allévägen och Tungelsta kyrka",
+                    "planned_work": "Gång-cykelbana på befintlig körbana",
+                    "length": 470,
+                    "cost": 1200000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -1464,7 +1912,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "65"
+                    "id": "65",
+                    "neigborhood": "Tungelsta",
+                    "path_description": "Allévägen mellan Kvarnvägen och Södertäljevägen",
+                    "planned_work": "Bredda befintlig gångbana",
+                    "length": 255,
+                    "cost": 400000,
+                    "comment": "",
+                    "priority": 1
                 }
             },
             {
@@ -1489,7 +1944,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "66"
+                    "id": "66",
+                    "neigborhood": "Tungelsta",
+                    "path_description": "Väg 551 Söderbyvägen mellan Lillgårdsvägen och ridskolan i Tungelsta",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 500,
+                    "cost": 2000000,
+                    "comment": "Vägverkets väg",
+                    "priority": 1
                 }
             },
             {
@@ -1510,7 +1972,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "67"
+                    "id": "67",
+                    "neigborhood": "Tungelsta",
+                    "path_description": "Väg 551 Söderbyvägen mellan ridskolan i Tungelsta till Källbacken",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 800,
+                    "cost": 3200000,
+                    "comment": "Vägverkets väg",
+                    "priority": 3
                 }
             },
             {
@@ -1529,7 +1998,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "68"
+                    "id": "68",
+                    "neigborhood": "Tungelsta",
+                    "path_description": "Lillgårdsvägen mellan Söderbyvägen och Dubbelvägen",
+                    "planned_work": "Bredda befintlig gångbana",
+                    "length": 485,
+                    "cost": 700000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -1545,7 +2021,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "69"
+                    "id": "69",
+                    "neigborhood": "Tungelsta",
+                    "path_description": "Idrottsvägen mellan Södertäljevägen och Skolvägen",
+                    "planned_work": "Gång-cykelbana på befintlig körbana",
+                    "length": 350,
+                    "cost": 1100000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -1577,7 +2060,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "70"
+                    "id": "70",
+                    "neigborhood": "Tungelsta",
+                    "path_description": "Väg 257 Södertäljevägen mellan Sorundavägen och Idrottsvägen",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 1600,
+                    "cost": 6600000,
+                    "comment": "Vägverkets väg",
+                    "priority": 1
                 }
             },
             {
@@ -1597,7 +2087,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "71"
+                    "id": "71",
+                    "neigborhood": "Landsb",
+                    "path_description": "Väg 683 på Muskö mellan skolan och Algatan 18",
+                    "planned_work": "Gång-cykelbana, Breddning av körbana.",
+                    "length": 330,
+                    "cost": 1200000,
+                    "comment": "Vägverkets väg",
+                    "priority": 2
                 }
             },
             {
@@ -1616,7 +2113,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "72"
+                    "id": "72",
+                    "neigborhood": "Vega",
+                    "path_description": "Gc-väg mellan Nordostpassage och bef gc-väg vid Länna",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 230,
+                    "cost": 920000,
+                    "comment": "Huddinge kommun",
+                    "priority": 2
                 }
             },
             {
@@ -1629,7 +2133,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "73"
+                    "id": "73",
+                    "neigborhood": "Handen",
+                    "path_description": "Marinens väg mellan Nynäsvägen och Rudsjöterassen",
+                    "planned_work": "Bredda befintlig gångbana",
+                    "length": 180,
+                    "cost": 630000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -1642,7 +2153,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "74"
+                    "id": "74",
+                    "neigborhood": "V-H",
+                    "path_description": "Åkervägen från Nynäsvägen och mot Ribbyängar",
+                    "planned_work": "Bredda befintlig gångbana och ny gc-väg",
+                    "length": 220,
+                    "cost": 830000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -1661,7 +2179,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "75"
+                    "id": "75",
+                    "neigborhood": "V-H",
+                    "path_description": "Håga industriområde del av Industriv, Verkstadsv, Förrådsv",
+                    "planned_work": "Gång-cykelbana, Breddning av körbana",
+                    "length": 1010,
+                    "cost": 3535000,
+                    "comment": "",
+                    "priority": 2
                 }
             },
             {
@@ -1675,7 +2200,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "76"
+                    "id": "76",
+                    "neigborhood": "Jordbro",
+                    "path_description": "Gc-väg mellan Lagervägen södra del och Nynäsvägen",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 270,
+                    "cost": 1080000,
+                    "comment": "",
+                    "priority": 3
                 }
             },
             {
@@ -1691,7 +2223,14 @@ var cykelplan_features = {
                     ]
                 },
                 "properties": {
-                    "id": "77"
+                    "id": "77",
+                    "neigborhood": "V-H",
+                    "path_description": "Gc-väg mellan Verkstadsvägen och genväg öster om Håga",
+                    "planned_work": "Ny friliggande gc-väg",
+                    "length": 100,
+                    "cost": 400000,
+                    "comment": "",
+                    "priority": 3
                 }
             }
         ]
