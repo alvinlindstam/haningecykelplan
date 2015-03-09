@@ -63,7 +63,9 @@ $(function(){
 		geojson.features.sort(function(a,b){			
 			return parseFloat(a.properties.id) - parseFloat(b.properties.id)
 		});
-		json_textarea.val("var cykelplan_features = " + JSON.stringify({"object":geojson}, null, 4));
+		feature_data_as_string = JSON.stringify({"object":geojson}, null, 4);
+		feature_data_as_string = feature_data_as_string.replace(/\[\s*([0-9\.]+),\s*([0-9\.]+)\s*\]/g, "[$1, \t$2]")
+		json_textarea.val("var cykelplan_features = " + feature_data_as_string);
 	};
 	source.on('change', update_json_textarea);
 	update_json_textarea();
