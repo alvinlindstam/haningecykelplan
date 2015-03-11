@@ -58,6 +58,8 @@ var cykelplan_features = {
                     "length": 1500,
                     "cost": 5200000,
                     "comment": "",
+                    "status": "antagligen ej genomförd",
+                    "own_comment": "Skulle enligt cykelplan genomföras i två etapper. 2012 planerades Bondvägen 50 - Lars-Olofs väg, 2015 återstående sträcka. Vad jag kan se på flygbilder verkar det inte ha byggts något än (när togs bilderna?).\nBondvägen är huvudgata i ett lantligt villaområde.",
                     "priority": 1
                 }
             },
@@ -97,6 +99,8 @@ var cykelplan_features = {
                     "length": 1000,
                     "cost": 3500000,
                     "comment": "",
+                    "status": "antagligen ej genomförd",
+                    "own_comment": "Skulle enligt cykelplan genomföras 2012. Vad jag kan se på flygbilder verkar det inte ha byggts något än (när togs bilderna?).\nLillängsvägen är en smal lantlig väg som binder ihop olika delar av Vendelsö på tvären.",
                     "priority": 3
                 }
             },
@@ -289,6 +293,8 @@ var cykelplan_features = {
                     "length": 960,
                     "cost": 1400000,
                     "comment": "",
+                    "status": "okänd",
+                    "own_comment": "Enligt cykelplanen skulle det genomföras 2012. Oklart om det gjorts eller ej tills jag kollat området eller hittat annan uppgift.\nDen föreslagna åtgärden låter futtig, och jag undrar hur de ser till att korsningar, busshållplatser mm funkar bra.",
                     "priority": 1
                 }
             },
@@ -521,6 +527,8 @@ var cykelplan_features = {
                     "length": 255,
                     "cost": 250000,
                     "comment": "",
+                    "status": "okänd",
+                    "own_comment": "Enligt cykelplanen skulle åtgärden genomföras 2012.\nSträckan förbinder en badplats med vägnät och bostadsområde. Enkel grusstig.",
                     "priority": 1
                 }
             },
@@ -978,6 +986,8 @@ var cykelplan_features = {
                     "length": 820,
                     "cost": 2600000,
                     "comment": "",
+                    "status": "antagligen ej genomförd",
+                    "own_comment": "Skulle enligt cykelplanen genomföras 2013. På eniros flygbilder är det fortfarande grusväg, men jag vet inte när flygbilderna är tagna.",
                     "priority": 1
                 }
             },
@@ -1785,6 +1795,8 @@ var cykelplan_features = {
                     "length": 930,
                     "cost": 3200000,
                     "comment": "",
+                    "status": "troligen ej genomförd(?)",
+                    "own_comment": "Cykelplanen angav att sträckan skulle byggas om 2014. Ser inte genomfört ut på flygbilder. Jag minns inte hur det såg ut när jag var där senast?\nSträckan är en huvudgata i Tungelsta, som ansluter centrum/stationen med de östra delarna.\nAlltid oroväckande när breddning av körbana anges som åtgärd i cykeplan. Bokförs hela ombyggnationen som cykelsatsning?",
                     "priority": 1
                 }
             },
@@ -1861,6 +1873,8 @@ var cykelplan_features = {
                     "length": 610,
                     "cost": 2200000,
                     "comment": "",
+                    "status": "troligen ej genomförd",
+                    "own_comment": "Ska enligt cykelplan genomföras 2015.",
                     "priority": 1
                 }
             },
@@ -1933,6 +1947,8 @@ var cykelplan_features = {
                     "length": 255,
                     "cost": 400000,
                     "comment": "",
+                    "status": "troligen ej genomförd(?)",
+                    "own_comment": "Cykelplanen angav att sträckan skulle byggas om 2012. Ser inte genomfört ut på flygbilder. Jag minns inte hur det såg ut när jag var där senast?\nSträckan är en huvudgata i Tungelsta, som ansluter centrum/stationen med de västra delarna.",
                     "priority": 1
                 }
             },
