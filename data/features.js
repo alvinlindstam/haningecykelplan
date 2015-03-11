@@ -338,6 +338,8 @@ var cykelplan_features = {
                     "length": 210,
                     "cost": 700000,
                     "comment": "",
+                    "status": "okänd",
+                    "own_comment": "Väg- och ledningsarbete pågår 2015.\nBreddning av körbana nämns i planerade åtgärden, jag hoppas inte hela ombyggnationen bokförs som \"cykelsatsning\"",
                     "priority": 1
                 }
             },
@@ -444,6 +446,8 @@ var cykelplan_features = {
                     "length": 2100,
                     "cost": 8300000,
                     "comment": "",
+                    "status": "delvis genomförd(?)",
+                    "own_comment": "Enligt cykelplanens handlingsplan skulle detta genomföras i etapper 2011-2014. Söderbyleden-Norrbyvägen 2011, Norrbyvägen-Gudöbroleden 2014, Nynäsvägen-Söderbyleden 2013.\nUtifrån det jag kan se på flygbilder är etapp 1 och delar av etapp 2 (fram till existerande GC-bana vid Järnåldersringen), jag har dock inte koll på när de bilder togs. Jag blir nyfiken (orolig) på om resten av etapp 2 (Järnåldersringen-Gudöbroleden) kommer byggas, eller om cyklister fortsatt är hänvisade till lokalgator, parkeringsplatser och omvägar.\nCykelplanen angav \"friliggande\" GC-väg, det som byggts har varit kant-i-kant med vägen, vad jag kan se utan skyddsremsa.\nTorfastleden är en viktig länk mellan Vendelsö och allt norr om Handen, och är väldigt ogästvänlig för cykeling i blandtrafik med höga hastigheter och brist på utrymme.",
                     "priority": 1
                 }
             },
@@ -667,6 +671,8 @@ var cykelplan_features = {
                     "length": 360,
                     "cost": 1400000,
                     "comment": "",
+                    "status": "genomförd",
+                    "own_comment": "Enligt cykelplanens handlingsplan skulle detta genomföras 2011. Jag har inte själv varit på platsen, men jag kan se på ortofoto att den byggts. Den ansluter till cykelbana längs med Torfastleden till Norrbyvägen. Anmärkningsvärt är dock att den inte verkar ha någon anslutning för de som ska västerut på Torfastleden.",
                     "priority": 1
                 }
             },
@@ -797,6 +803,8 @@ var cykelplan_features = {
                     "length": 205,
                     "cost": 300000,
                     "comment": "",
+                    "status": "antagligen inte(?)",
+                    "own_comment": "Skulle enligt cykelplanen genomföras 2011. Vad jag kan se på flygbilder verkar det inte gjort. I cykelplanen nämns bara breddning av cykelbanan, jag blir nyfiken/orolig kring tänkt lösning vid anslutning till Dalarövägen.",
                     "priority": 1
                 }
             },
@@ -1472,6 +1480,8 @@ var cykelplan_features = {
                     "length": 300,
                     "cost": 600000,
                     "comment": "",
+                    "status": "ej genomförd",
+                    "own_comment": "Skulle enligt cykelplanen genomföras 2011.\nDagsläget: cykling på körbana, men de flesta cyklar på gångbanan. Den hastighetssänkande avsmalningen innebär en konfliktpunkt mellan bil- och cykeltrafik, då många bilister tycker det är passande att köra om eller mötas där trots brist på utrymme. Mellan Ringvägen och existerande cykelbana (Åbygången) är det bara gångbana.",
                     "priority": 1
                 }
             },
@@ -1496,6 +1506,8 @@ var cykelplan_features = {
                     "length": 280,
                     "cost": 400000,
                     "comment": "Vägverkets väg",
+                    "status": "ej genomförd",
+                    "own_comment": "Skulle enligt cykelplanen genomföras 2011.",
                     "priority": 2
                 }
             },
@@ -1518,6 +1530,8 @@ var cykelplan_features = {
                     "length": 220,
                     "cost": 550000,
                     "comment": "",
+                    "status": "antagligen inte genomförd(?)",
+                    "own_comment": "Skulle enligt cykelplanen genomföras 2011.",
                     "priority": 1
                 }
             },
