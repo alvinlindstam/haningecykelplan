@@ -59,7 +59,7 @@ var cykelplan_features = {
                     "cost": 5200000,
                     "comment": "",
                     "status": "antagligen ej genomförd",
-                    "own_comment": "Skulle enligt cykelplan genomföras i två etapper. 2012 planerades Bondvägen 50 - Lars-Olofs väg, 2015 återstående sträcka. Vad jag kan se på flygbilder verkar det inte ha byggts något än (när togs bilderna?).\nBondvägen är huvudgata i ett lantligt villaområde.",
+                    "own_comment": "Skulle enligt cykelplan genomföras i två etapper. 2012 planerades Bondvägen 50 - Lars-Olofs väg, 2015 återstående sträcka. Vad jag kan se på flygbilder verkar det inte ha byggts något än (när togs bilderna?).\nBondvägen är huvudgata i ett lantligt villaområde. Varför är det en Prio 1-sträcka?",
                     "priority": 1
                 }
             },
@@ -99,8 +99,6 @@ var cykelplan_features = {
                     "length": 1000,
                     "cost": 3500000,
                     "comment": "",
-                    "status": "antagligen ej genomförd",
-                    "own_comment": "Skulle enligt cykelplan genomföras 2012. Vad jag kan se på flygbilder verkar det inte ha byggts något än (när togs bilderna?).\nLillängsvägen är en smal lantlig väg som binder ihop olika delar av Vendelsö på tvären.",
                     "priority": 3
                 }
             },
@@ -321,6 +319,8 @@ var cykelplan_features = {
                     "length": 240,
                     "cost": 800000,
                     "comment": "",
+                    "status": "antagligen ej genomförd",
+                    "own_comment": "Skulle enligt cykelplan genomföras 2012. Vad jag kan se på flygbilder verkar det inte ha byggts något än (när togs bilderna?).\nVarför är det här en Prio 1-sträcka?",                    
                     "priority": 1
                 }
             },
@@ -1515,9 +1515,7 @@ var cykelplan_features = {
                     "planned_work": "Bredda befintlig gångbana",
                     "length": 280,
                     "cost": 400000,
-                    "comment": "Vägverkets väg",
-                    "status": "ej genomförd",
-                    "own_comment": "Skulle enligt cykelplanen genomföras 2011.",
+                    "comment": "Vägverkets väg",                    
                     "priority": 2
                 }
             },
@@ -1766,6 +1764,8 @@ var cykelplan_features = {
                     "length": 5700,
                     "cost": 22900000,
                     "comment": "Vägverkets väg",
+                    "status": "delvis genomförd",
+                    "own_comment": "Kommunen(?) har i samband med indragning av kommunalt vatten anlagt GC-bana i själva Årsta Havsbad. Sträckan mellan Årsta Havsbad och existerande cykelbana från Västerhaninge har dock inte påbörjats (eller beslutats?). Jag cyklade med barnen för att bada, var inte så kul upplevelse.",
                     "priority": 1
                 }
             },
@@ -1896,7 +1896,9 @@ var cykelplan_features = {
                     "planned_work": "Gång-cykelbana på befintlig körbana",
                     "length": 205,
                     "cost": 600000,
-                    "comment": "",
+                    "comment": "",                    
+                    "status": "ej genomförd",
+                    "own_comment": "Skulle enligt cykelplanen genomföras 2011.",
                     "priority": 1
                 }
             },
