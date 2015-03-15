@@ -60,8 +60,12 @@ $(function(){
 	var json_textarea = $("#json_string")
 	var update_json_textarea = function(){
 		var geojson = (new ol.format.GeoJSON()).writeFeatures(source.getFeatures());
-		geojson.features.sort(function(a,b){			
-			return parseFloat(a.properties.id) - parseFloat(b.properties.id)
+		geojson.features.sort(function(a,b){	
+			af = parseFloat(a.properties.id)
+			bf = parseFloat(b.properties.id)		
+			if(af==bf)
+				return a>b ? -1 : (a<b ? 1 : 0)					
+			return af - bf
 		});
 		feature_data_as_string = JSON.stringify({"object":geojson}, null, 4);
 		feature_data_as_string = feature_data_as_string.replace(/\[\s*([0-9\.]+),\s*([0-9\.]+)\s*\]/g, "[$1, \t$2]")
