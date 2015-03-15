@@ -458,7 +458,7 @@ var cykelplan_features = {
      "comment": "",
      "status": "delvis genomförd(?)",
      "status_code": 1,
-     "own_comment": "Enligt cykelplanens handlingsplan skulle detta genomföras i etapper 2011-2014. Söderbyleden-Norrbyvägen 2011, Norrbyvägen-Gudöbroleden 2014, Nynäsvägen-Söderbyleden 2013.\nUtifrån det jag kan se på flygbilder är etapp 1 och delar av etapp 2 (fram till existerande GC-bana vid Järnåldersringen), jag har dock inte koll på när de bilder togs. Jag blir nyfiken (orolig) på om resten av etapp 2 (Järnåldersringen-Gudöbroleden) kommer byggas, eller om cyklister fortsatt är hänvisade till lokalgator, parkeringsplatser och omvägar.\nCykelplanen angav \"friliggande\" GC-väg, det som byggts har varit kant-i-kant med vägen, vad jag kan se utan skyddsremsa.\nTorfastleden är en viktig länk mellan Vendelsö och allt norr om Handen, och är väldigt ogästvänlig för cykeling i blandtrafik med höga hastigheter och brist på utrymme.",
+     "own_comment": "Enligt cykelplanens handlingsplan skulle detta genomföras i etapper 2011-2014. Söderbyleden-Norrbyvägen 2011, Norrbyvägen-Gudöbroleden 2014, Nynäsvägen-Söderbyleden 2013.\nUtifrån det jag kan se på flygbilder är etapp 1 och delar av etapp 2 (fram till existerande GC-bana vid Järnåldersringen), jag har dock inte koll på när de bilder togs. Jag blir nyfiken (orolig) på om resten av etapp 2 (Järnåldersringen-Gudöbroleden) kommer byggas, eller om cyklister fortsatt är hänvisade till lokalgator, parkeringsplatser och omvägar.\nCykelplanen angav \"friliggande\" GC-väg, det som byggts har varit kant-i-kant med vägen, vad jag kan se utan skyddsremsa.\nTorfastleden är en viktig länk mellan Vendelsö och allt norr om Handen, och är väldigt ogästvänlig för cykeling i blandtrafik med höga hastigheter och brist på utrymme.\n",
      "priority": 1
     }
    },
@@ -912,23 +912,32 @@ var cykelplan_features = {
     "geometry": {
      "type": "LineString",
      "coordinates": [
-      [2021346.691263806, 8216365.244373063],
-      [2021370.5778351452, 8216350.315265976],
-      [2021375.9523136965, 8216318.068394668],
-      [2021372.6339338946, 8216255.27670177],
-      [2021349.9416911223, 8216005.662031273],
-      [2021305.6309084282, 8215627.223070721],
-      [2021282.1057082359, 8215541.2470199615],
-      [2021237.0198048335, 8215461.376297048],
-      [2021189.9964719054, 8215416.697448226],
-      [2021162.825497007, 8215397.886773298],
-      [2021122.2738446477, 8215377.5392518155],
-      [2021076.3472714457, 8215361.964883198],
-      [2021050.3706251143, 8215341.064133276],
-      [2021036.934428736, 8215320.163383354],
-      [2021033.3514430353, 8215291.798079889],
-      [2021029.171293051, 8215270.001583543],
-      [2021012.4506931135, 8215248.503669337]
+      [2021286.7532450594, 8216476.081747407],
+      [2021335.1235520216, 8216398.748972697],
+      [2021348.5597484002, 8216356.947472859],
+      [2021356.0243019436, 8216320.520451567],
+      [2021356.9200483689, 8216290.662237393],
+      [2021343.0359787785, 8216123.456238026],
+      [2021321.5380645723, 8215901.311124568],
+      [2021283.7674236384, 8215629.526730039],
+      [2021271.5255558263, 8215578.469183803],
+      [2021253.9092094633, 8215533.980444686],
+      [2021229.7240559824, 8215494.567601976],
+      [2021208.8233060604, 8215470.083866359],
+      [2021182.5480775875, 8215446.197295019],
+      [2021151.794116988, 8215424.699380815],
+      [2021126.1160527985, 8215410.06885587],
+      [2021104.7151120233, 8215400.510396411],
+      [2021072.7668228573, 8215389.462857166],
+      [2021047.3873408095, 8215376.623825071],
+      [2021028.2780837377, 8215359.306060852],
+      [2021014.8418873595, 8215339.599639497],
+      [2021007.6759159577, 8215324.67053241],
+      [2021004.988676682, 8215307.352768189],
+      [2021003.4957659733, 8215284.660525417],
+      [2021001.107108839, 8215276.598807591],
+      [2020993.642555296, 8215270.030000473],
+      [2020982.8935981933, 8215264.655521922]
      ]
     },
     "properties": {
@@ -939,6 +948,9 @@ var cykelplan_features = {
      "length": 640,
      "cost": 950000,
      "comment": "",
+     "status": "genomförd",
+     "status_code": 1,
+     "own_comment": "Jag tror att åtgärden är genomförd, men det faktum att jag är osäker (trots att jag cyklat där) säger något om kvaliten på cykelbanan.\nTrottoaren/cykelbanan(?) är visserligen bred, kanske 3 meter, men ger i övrigt inga signaler om att det är en cykelbana, och om det är en cykelbana är den väldigt dålig. I cykelplanen var sträckan bara utritad fram till infartsgatan till Torvalla sporthall, men det finns nu GC-bana längs med Torvallavägen från korsningen fram till gamla GC-banan. \nJag reagerade på att cykelbanan(?) hade följande brister:\n- Vid anläggandet har hänsyn bara tagits till sträckorna, medan korsningarna inte anpassats för cykel. Det finns ingen cykelpassage eller cykelöverfart, och man kan inte hålla en rak linje om man inte vill åka upp eller ner för kantstenen.\n- Där cykelbanan(?) ansluter till Vallavägens östra ände övergår den i att vara trottoar. Detta utan skyltning eller någon som helst anorndning av hur cyklister ska byta till cykelbanan som ny ligger på södra sidan Vallavägen.\n- Belysningsstolparna står nära inpå cykelbanans kant, trots cykelplanens krav på 40 cm.\n- Det finns ingen skyddsremsa mot bilvägen (ens målad), trots att cykelplanen tar upp detta som bra utformning.\n Att det ser ut som en bred trottoar snarare än cykelbana riskerar leda till osäkerhet och irritation bland alla trafikanter.",
      "priority": 2
     }
    },

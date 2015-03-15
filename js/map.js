@@ -20,8 +20,7 @@ $(function(){
 	  	source: source,
 	  	style: function(feature, resolution) {
 	  		
-	    var text = ''+feature.get('priority')+feature.get('status_code');
-	    console.log(feature.get('id'), text);
+	    var text = ''+feature.get('priority')+feature.get('status_code');	    
 	    if (!styleCache[text]) {	    	
 	    	var width = 1.5+3-feature.get('priority');
 	    	var color = '#3399CC';
@@ -32,12 +31,12 @@ $(function(){
 	    				break;
 	    			case 0:
 	    				color = '#fa3';
-	    				break;
-	    			case 1:
-	    				color = '#3c9';
-	    				break;
+	    				break;	    			
 	    		}	    			
 	    	}
+	    	if(feature.get('status_code')==1)
+	    		color = '#3c9';
+
 	      	styleCache[text] = [	      		
       			new ol.style.Style({
         			stroke: new ol.style.Stroke({
@@ -100,11 +99,12 @@ $(function(){
 	var update_json_textarea = function(){
 		var geojson = (new ol.format.GeoJSON()).writeFeatures(source.getFeatures());
 		geojson.features.sort(function(a,b){	
-			af = parseFloat(a.properties.id)
-			bf = parseFloat(b.properties.id)		
-			if(af==bf)
-				return a>b ? -1 : (a<b ? 1 : 0)					
-			return af - bf
+			var a_id = a.properties.id
+			var b_id = b.properties.id
+			var diff = parseFloat(a_id) - parseFloat(b_id)			
+			if(diff==0)				
+				return a_id>b_id ? 1 : (a_id<b_id ? -1 : 0)					
+			return diff
 		});
 		feature_data_as_string = JSON.stringify({"object":geojson}, null, 1);
 		feature_data_as_string = feature_data_as_string.replace(/\[\s*([0-9\.]+),\s*([0-9\.]+)\s*\]/g, "[$1, $2]")
