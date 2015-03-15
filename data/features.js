@@ -59,6 +59,7 @@ var cykelplan_features = {
                     "cost": 5200000,
                     "comment": "",
                     "status": "antagligen ej genomförd",
+                    "status_code": -1,
                     "own_comment": "Skulle enligt cykelplan genomföras i två etapper. 2012 planerades Bondvägen 50 - Lars-Olofs väg, 2015 återstående sträcka. Vad jag kan se på flygbilder verkar det inte ha byggts något än (när togs bilderna?).\nBondvägen är huvudgata i ett lantligt villaområde. Varför är det en Prio 1-sträcka?",
                     "priority": 1
                 }
@@ -292,6 +293,7 @@ var cykelplan_features = {
                     "cost": 1400000,
                     "comment": "",
                     "status": "okänd",
+                    "status_code": 0,
                     "own_comment": "Enligt cykelplanen skulle det genomföras 2012. Oklart om det gjorts eller ej tills jag kollat området eller hittat annan uppgift.\nDen föreslagna åtgärden låter futtig, och jag undrar hur de ser till att korsningar, busshållplatser mm funkar bra.",
                     "priority": 1
                 }
@@ -320,6 +322,7 @@ var cykelplan_features = {
                     "cost": 800000,
                     "comment": "",
                     "status": "antagligen ej genomförd",
+                    "status_code": -1,
                     "own_comment": "Skulle enligt cykelplan genomföras 2012. Vad jag kan se på flygbilder verkar det inte ha byggts något än (när togs bilderna?).\nVarför är det här en Prio 1-sträcka?",
                     "priority": 1
                 }
@@ -345,6 +348,7 @@ var cykelplan_features = {
                     "cost": 700000,
                     "comment": "",
                     "status": "okänd",
+                    "status_code": 0,
                     "own_comment": "Väg- och ledningsarbete pågår 2015.\nBreddning av körbana nämns i planerade åtgärden, jag hoppas inte hela ombyggnationen bokförs som \"cykelsatsning\"",
                     "priority": 1
                 }
@@ -453,6 +457,7 @@ var cykelplan_features = {
                     "cost": 8300000,
                     "comment": "",
                     "status": "delvis genomförd(?)",
+                    "status_code": 1, // todo: split feature
                     "own_comment": "Enligt cykelplanens handlingsplan skulle detta genomföras i etapper 2011-2014. Söderbyleden-Norrbyvägen 2011, Norrbyvägen-Gudöbroleden 2014, Nynäsvägen-Söderbyleden 2013.\nUtifrån det jag kan se på flygbilder är etapp 1 och delar av etapp 2 (fram till existerande GC-bana vid Järnåldersringen), jag har dock inte koll på när de bilder togs. Jag blir nyfiken (orolig) på om resten av etapp 2 (Järnåldersringen-Gudöbroleden) kommer byggas, eller om cyklister fortsatt är hänvisade till lokalgator, parkeringsplatser och omvägar.\nCykelplanen angav \"friliggande\" GC-väg, det som byggts har varit kant-i-kant med vägen, vad jag kan se utan skyddsremsa.\nTorfastleden är en viktig länk mellan Vendelsö och allt norr om Handen, och är väldigt ogästvänlig för cykeling i blandtrafik med höga hastigheter och brist på utrymme.",
                     "priority": 1
                 }
@@ -528,6 +533,7 @@ var cykelplan_features = {
                     "cost": 250000,
                     "comment": "",
                     "status": "okänd",
+                    "status_code": 0,
                     "own_comment": "Enligt cykelplanen skulle åtgärden genomföras 2012.\nSträckan förbinder en badplats med vägnät och bostadsområde. Enkel grusstig.",
                     "priority": 1
                 }
@@ -680,6 +686,7 @@ var cykelplan_features = {
                     "cost": 1400000,
                     "comment": "",
                     "status": "genomförd",
+                    "status_code": 1,
                     "own_comment": "Enligt cykelplanens handlingsplan skulle detta genomföras 2011. Jag har inte själv varit på platsen, men jag kan se på ortofoto att den byggts. Den ansluter till cykelbana längs med Torfastleden till Norrbyvägen. Anmärkningsvärt är dock att den inte verkar ha någon anslutning för de som ska västerut på Torfastleden.",
                     "priority": 1
                 }
@@ -812,6 +819,7 @@ var cykelplan_features = {
                     "cost": 300000,
                     "comment": "",
                     "status": "antagligen inte(?)",
+                    "status_code": -1,
                     "own_comment": "Skulle enligt cykelplanen genomföras 2011. Vad jag kan se på flygbilder verkar det inte gjort. I cykelplanen nämns bara breddning av cykelbanan, jag blir nyfiken/orolig kring tänkt lösning vid anslutning till Dalarövägen.",
                     "priority": 1
                 }
@@ -987,6 +995,7 @@ var cykelplan_features = {
                     "cost": 2600000,
                     "comment": "",
                     "status": "antagligen ej genomförd",
+                    "status_code": -1,
                     "own_comment": "Skulle enligt cykelplanen genomföras 2013. På eniros flygbilder är det fortfarande grusväg, men jag vet inte när flygbilderna är tagna.",
                     "priority": 1
                 }
@@ -1491,6 +1500,7 @@ var cykelplan_features = {
                     "cost": 600000,
                     "comment": "",
                     "status": "ej genomförd",
+                    "status_code": -1,
                     "own_comment": "Skulle enligt cykelplanen genomföras 2011.\nDagsläget: cykling på körbana, men de flesta cyklar på gångbanan. Den hastighetssänkande avsmalningen innebär en konfliktpunkt mellan bil- och cykeltrafik, då många bilister tycker det är passande att köra om eller mötas där trots brist på utrymme. Mellan Ringvägen och existerande cykelbana (Åbygången) är det bara gångbana.",
                     "priority": 1
                 }
@@ -1539,6 +1549,7 @@ var cykelplan_features = {
                     "cost": 550000,
                     "comment": "",
                     "status": "antagligen inte genomförd(?)",
+                    "status_code": -1,
                     "own_comment": "Skulle enligt cykelplanen genomföras 2011.",
                     "priority": 1
                 }
@@ -1765,6 +1776,7 @@ var cykelplan_features = {
                     "cost": 22900000,
                     "comment": "Vägverkets väg",
                     "status": "delvis genomförd",
+                    "status_code": 1, // todo: split line
                     "own_comment": "Kommunen(?) har i samband med indragning av kommunalt vatten anlagt GC-bana i själva Årsta Havsbad. Sträckan mellan Årsta Havsbad och existerande cykelbana från Västerhaninge har dock inte påbörjats (eller beslutats?). Jag cyklade med barnen för att bada, var inte så kul upplevelse.",
                     "priority": 1
                 }
@@ -1796,6 +1808,7 @@ var cykelplan_features = {
                     "cost": 3200000,
                     "comment": "",
                     "status": "troligen ej genomförd(?)",
+                    "status_code": -1,
                     "own_comment": "Cykelplanen angav att sträckan skulle byggas om 2014. Ser inte genomfört ut på flygbilder. Jag minns inte hur det såg ut när jag var där senast?\nSträckan är en huvudgata i Tungelsta, som ansluter centrum/stationen med de östra delarna.\nAlltid oroväckande när breddning av körbana anges som åtgärd i cykeplan. Bokförs hela ombyggnationen som cykelsatsning?",
                     "priority": 1
                 }
@@ -1849,6 +1862,7 @@ var cykelplan_features = {
                     "cost": 2200000,
                     "comment": "",
                     "status": "troligen ej genomförd",
+                    "status_code": -1,
                     "own_comment": "Ska enligt cykelplan genomföras 2015.",
                     "priority": 1
                 }
@@ -1898,6 +1912,7 @@ var cykelplan_features = {
                     "cost": 600000,
                     "comment": "",
                     "status": "ej genomförd",
+                    "status_code": -1,
                     "own_comment": "Skulle enligt cykelplanen genomföras 2011.",
                     "priority": 1
                 }
@@ -1950,6 +1965,7 @@ var cykelplan_features = {
                     "cost": 400000,
                     "comment": "",
                     "status": "troligen ej genomförd(?)",
+                    "status_code": -1,
                     "own_comment": "Cykelplanen angav att sträckan skulle byggas om 2012. Ser inte genomfört ut på flygbilder. Jag minns inte hur det såg ut när jag var där senast?\nSträckan är en huvudgata i Tungelsta, som ansluter centrum/stationen med de västra delarna.",
                     "priority": 1
                 }
