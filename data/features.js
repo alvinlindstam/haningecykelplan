@@ -320,7 +320,7 @@ var cykelplan_features = {
                     "cost": 800000,
                     "comment": "",
                     "status": "antagligen ej genomförd",
-                    "own_comment": "Skulle enligt cykelplan genomföras 2012. Vad jag kan se på flygbilder verkar det inte ha byggts något än (när togs bilderna?).\nVarför är det här en Prio 1-sträcka?",                    
+                    "own_comment": "Skulle enligt cykelplan genomföras 2012. Vad jag kan se på flygbilder verkar det inte ha byggts något än (när togs bilderna?).\nVarför är det här en Prio 1-sträcka?",
                     "priority": 1
                 }
             },
@@ -1515,7 +1515,7 @@ var cykelplan_features = {
                     "planned_work": "Bredda befintlig gångbana",
                     "length": 280,
                     "cost": 400000,
-                    "comment": "Vägverkets väg",                    
+                    "comment": "Vägverkets väg",
                     "priority": 2
                 }
             },
@@ -1830,31 +1830,6 @@ var cykelplan_features = {
                 "geometry": {
                     "type": "LineString",
                     "coordinates": [
-                        [2009113.9548819296, 	8202940.0804573605],
-                        [2009103.8030891104, 	8202956.801057298],
-                        [2009102.6087605434, 	8202987.853600038],
-                        [2009105.5945819607, 	8203009.650096386],
-                        [2009123.808092607, 	8203031.745174875],
-                        [2009127.9882425913, 	8203046.972864103],
-                        [2009135.4527961344, 	8203054.43741765]
-                    ]
-                },
-                "properties": {
-                    "id": "62b",
-                    "neigborhood": "Tungelsta",
-                    "path_description": "Gc-väg mellan Allévägen och Hammarbergsvägen",
-                    "planned_work": "Gång-cykelbana, Breddning av körbana.",
-                    "length": 100,
-                    "cost": 350000,
-                    "comment": "",
-                    "priority": 2
-                }
-            },
-            {
-                "type": "Feature",
-                "geometry": {
-                    "type": "LineString",
-                    "coordinates": [
                         [2009148.3712375374, 	8202945.764479015],
                         [2009120.901680496, 	8203172.089742454],
                         [2009122.6931733466, 	8203265.84453496],
@@ -1883,6 +1858,31 @@ var cykelplan_features = {
                 "geometry": {
                     "type": "LineString",
                     "coordinates": [
+                        [2009113.9548819296, 	8202940.0804573605],
+                        [2009103.8030891104, 	8202956.801057298],
+                        [2009102.6087605434, 	8202987.853600038],
+                        [2009105.5945819607, 	8203009.650096386],
+                        [2009123.808092607, 	8203031.745174875],
+                        [2009127.9882425913, 	8203046.972864103],
+                        [2009135.4527961344, 	8203054.43741765]
+                    ]
+                },
+                "properties": {
+                    "id": "62b",
+                    "neigborhood": "Tungelsta",
+                    "path_description": "Gc-väg mellan Allévägen och Hammarbergsvägen",
+                    "planned_work": "Gång-cykelbana, Breddning av körbana.",
+                    "length": 100,
+                    "cost": 350000,
+                    "comment": "",
+                    "priority": 2
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
                         [2008029.7298717757, 	8203123.5267344015],
                         [2008042.7181949422, 	8203128.901212952],
                         [2008057.0501377457, 	8203147.41330574],
@@ -1896,7 +1896,7 @@ var cykelplan_features = {
                     "planned_work": "Gång-cykelbana på befintlig körbana",
                     "length": 205,
                     "cost": 600000,
-                    "comment": "",                    
+                    "comment": "",
                     "status": "ej genomförd",
                     "own_comment": "Skulle enligt cykelplanen genomföras 2011.",
                     "priority": 1
