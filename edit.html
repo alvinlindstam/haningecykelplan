@@ -14,18 +14,21 @@
     <link rel="stylesheet" href="css/style.css" type="text/css"></link>
   </head>
   <body>
-  	<div id="header">
-  		<input type="button" data-geomtype="LineString" value="Linje" class="initDrawInteraction" />
-      <textarea id="json_string" style="height:3em">
-      </textarea>
-  	</div>
-    <div id="map" class="map">
-      <div id="popup">
-        <div>
-          <table>
-          </table>
+    <div id="wrapper" class="container">
+    	<header id="header">
+    		<input type="button" data-geomtype="LineString" value="Linje" class="initDrawInteraction" />
+        <textarea id="json_string" style="height:3em">
+        </textarea>
+    	</header>
+      <div id="map" class="map content">
+        <div id="popup">
+          <div>
+            <table>
+            </table>
+          </div>
         </div>
-      </div>
+      </div>        
+      <footer></footer>
     </div>    
   </body>
 </html>

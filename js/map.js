@@ -1,4 +1,6 @@
 $(function(){
+	var styleCache = {};
+
 	var raster = new ol.layer.Tile({
 		source: new ol.source.MapQuest({layer: 'sat'})
 	});
@@ -6,8 +8,8 @@ $(function(){
       source: new ol.source.BingMaps({
       	// todo: fix own key for server
       	key: 'Ak-dzM4wZjSqTlzveKz5u0d4IQ4bRzVI309GxmkgSVr1ewS6iPSrOvOKhA-CJlm3',
-        //imagerySet: 'Aerial'
-        imagerySet: 'AerialWithLabels'
+        imagerySet: 'Aerial'
+        //imagerySet: 'AerialWithLabels'
       })
     })
 	// existing features expected to be contained in cykelplan_features variable
@@ -15,7 +17,44 @@ $(function(){
 	source = new ol.source.GeoJSON((cykelplan_features));	
 
 	var layer = new ol.layer.Vector({
-	  	source: source	  	
+	  	source: source,
+	  	style: function(feature, resolution) {
+	  		
+	    var text = ''+feature.get('priority')+feature.get('status_code');
+	    console.log(feature.get('id'), text);
+	    if (!styleCache[text]) {	    	
+	    	var width = 1.5+3-feature.get('priority');
+	    	var color = '#3399CC';
+	    	if (feature.get('priority')==1) {
+	    		switch (feature.get('status_code')){
+	    			case -1:
+	    				color = '#c44';
+	    				break;
+	    			case 0:
+	    				color = '#fa3';
+	    				break;
+	    			case 1:
+	    				color = '#3c9';
+	    				break;
+	    		}	    			
+	    	}
+	      	styleCache[text] = [	      		
+      			new ol.style.Style({
+        			stroke: new ol.style.Stroke({
+          				color: "white",
+          				width: width*1.2
+        			})	        
+      			}),
+      			new ol.style.Style({
+        			stroke: new ol.style.Stroke({
+          				color: color,
+          				width: width
+        			})	        
+      			})      			
+	      	];
+	    }
+	    return styleCache[text];
+	  }	  	
 	});
 
 	var map = new ol.Map({
@@ -67,8 +106,8 @@ $(function(){
 				return a>b ? -1 : (a<b ? 1 : 0)					
 			return af - bf
 		});
-		feature_data_as_string = JSON.stringify({"object":geojson}, null, 4);
-		feature_data_as_string = feature_data_as_string.replace(/\[\s*([0-9\.]+),\s*([0-9\.]+)\s*\]/g, "[$1, \t$2]")
+		feature_data_as_string = JSON.stringify({"object":geojson}, null, 1);
+		feature_data_as_string = feature_data_as_string.replace(/\[\s*([0-9\.]+),\s*([0-9\.]+)\s*\]/g, "[$1, $2]")
 		json_textarea.val("var cykelplan_features = " + feature_data_as_string);
 	};
 	source.on('change', update_json_textarea);
