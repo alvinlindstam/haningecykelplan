@@ -458,7 +458,7 @@ var cykelplan_features = {
      "comment": "",
      "status": "delvis genomförd(?)",
      "status_code": 1,
-     "own_comment": "Enligt cykelplanens handlingsplan skulle detta genomföras i etapper 2011-2014. Söderbyleden-Norrbyvägen 2011, Norrbyvägen-Gudöbroleden 2014, Nynäsvägen-Söderbyleden 2013.\nUtifrån det jag kan se på flygbilder är etapp 1 och delar av etapp 2 (fram till existerande GC-bana vid Järnåldersringen), jag har dock inte koll på när de bilder togs. Jag blir nyfiken (orolig) på om resten av etapp 2 (Järnåldersringen-Gudöbroleden) kommer byggas, eller om cyklister fortsatt är hänvisade till lokalgator, parkeringsplatser och omvägar.\nCykelplanen angav \"friliggande\" GC-väg, det som byggts har varit kant-i-kant med vägen, vad jag kan se utan skyddsremsa.\nTorfastleden är en viktig länk mellan Vendelsö och allt norr om Handen, och är väldigt ogästvänlig för cykeling i blandtrafik med höga hastigheter och brist på utrymme.\n",
+     "own_comment": "Enligt cykelplanens handlingsplan skulle detta genomföras i etapper 2011-2014. Söderbyleden-Norrbyvägen 2011, Norrbyvägen-Gudöbroleden 2014, Nynäsvägen-Söderbyleden 2013.\nUtifrån det jag kan se på flygbilder är etapp 1 och delar av etapp 2 (fram till existerande GC-bana vid Järnåldersringen), jag har dock inte koll på när de bilder togs. Jag blir nyfiken (orolig) på om resten av etapp 2 (Järnåldersringen-Gudöbroleden) kommer byggas, eller om cyklister fortsatt är hänvisade till lokalgator, parkeringsplatser och omvägar.\nCykelplanen angav \"friliggande\" GC-väg, det som byggts har varit kant-i-kant med vägen, vad jag kan se utan skyddsremsa.\nTorfastleden är en viktig länk mellan Vendelsö och allt norr om Handen, och är väldigt ogästvänlig för cykeling i blandtrafik med höga hastigheter och brist på utrymme.",
      "priority": 1
     }
    },
@@ -1015,7 +1015,7 @@ var cykelplan_features = {
      "comment": "",
      "status": "genomförd",
      "status_code": 1,
-     "own_comment": "Stråket förbinder Jordbro med östar Handen, Brandbergen och Vendelsö. \nEnligt cykelplanen skulle den grusstig som tidigare låg här asfalteras 2013. Jag cyklade sträckan mars 2015, och i stort är det en bra anslutning genom skogen och mycket av cykelplanens krav verkar uppfyllda. Bredden verkar vara runt 3 meter, beläggningen var jämn och det fanns belysning (hur bra den är vet jag inte, jag har bara varit där dagtid).\nJag tyckte det var anmärkningsvärt att det helt saknades vägvisning (skyltar), trots att stråket förbinder olika kommundelar.\nJag reagerade på en kulle som passerades, där det blev brant uppför i onödan. Om sprängning/grävning hade varit svårt/dyrt verkade det som att en flytt några meter åt sidan hade gett en jämn färdväg utan märkbar höjdskillnad.\nMest anmärkningsvärt var att belysningsstolparna placerats tätt invid cykelbanan, trots att de enligt cykelplanen ska placeras minst 40 cm från kanten.",
+     "own_comment": "Stråket förbinder Jordbro med östra Handen, Brandbergen och Vendelsö. \nEnligt cykelplanen skulle den grusstig som tidigare låg här asfalteras 2013. Jag cyklade sträckan mars 2015, och i stort är det en bra anslutning genom skogen och mycket av cykelplanens krav verkar uppfyllda. Bredden verkar vara runt 3 meter, beläggningen var jämn och det fanns belysning (hur bra den är vet jag inte, jag har bara varit där dagtid).\nJag tyckte det var anmärkningsvärt att det helt saknades vägvisning (skyltar), trots att stråket förbinder olika kommundelar.\nJag reagerade på en kulle som passerades, där det blev brant uppför i onödan. Om sprängning/grävning hade varit svårt/dyrt verkade det som att en flytt några meter åt sidan hade gett en jämn färdväg utan märkbar höjdskillnad.\nMest anmärkningsvärt var att belysningsstolparna placerats tätt invid cykelbanan, trots att de enligt cykelplanen ska placeras minst 40 cm från kanten.",
      "priority": 1
     }
    },
@@ -2283,9 +2283,13 @@ var cykelplan_features = {
     "geometry": {
      "type": "LineString",
      "coordinates": [
-      [2016739.422344896, 8208740.467998424],
-      [2016725.0904020926, 8208753.60561266],
-      [2016553.7042527336, 8209355.547210408]
+      [2016738.5794540218, 8208740.671567382],
+      [2016733.9514308246, 8208742.761642374],
+      [2016729.7712808403, 8208745.44888165],
+      [2016726.3375862103, 8208751.420524485],
+      [2016554.9506821174, 8209351.5796861425],
+      [2016555.3985553302, 8209354.117634347],
+      [2016558.0857946076, 8209357.402037918]
      ]
     },
     "properties": {
@@ -2296,6 +2300,9 @@ var cykelplan_features = {
      "length": 270,
      "cost": 1080000,
      "comment": "",
+     "status":"genomförd",
+     "status_code": 1,
+     "own_comment": "Denna cykelbana byggdes 2013 eller tidigare, trots att den givits prioritet 3 i cykelplanen. Den hade i cykeplanen en något annorlunda sträckning.\nSträckan förbinder Jorbro industriområde med Nynäsvägens cykelbana, och innebär en tydlig genväg främst för resor mellan Västerhaninge och industriområdets södra delar.\n Dess standard var i stort sett god, men som de flesta andra nybyggda cykelbanor följs inte kravet på avstånd till hinder, lyktstolparna står för nära.",
      "priority": 3
     }
    },
