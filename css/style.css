@@ -10,18 +10,7 @@ html,body
 
 .container
 {
-   -ms-box-orient: vertical;
-   display: -ms-flex;
-   height: 100%;
-   display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
-   display: -moz-flex; 
-   display: -ms-flexbox;   /* MID: IE 10 */
-   display: -webkit-flex;  /* NEW, Chrome 21+ */ 
-   display: flex;          /* NEW: Opera 12.1, Firefox 22+ */    
-   
-   -ms-flex-direction: column; 
-   -webkit-flex-direction: column;
-   flex-direction: column; 
+   height: 100%;   
 }
 
 header
@@ -29,18 +18,20 @@ header
 }
 
 .content
-{
-    -ms-flex: 1 1 auto;
-    -webkit-flex: 1 1 auto;
-    flex: 1 1 auto;
-    overflow: auto;
-    height:0;
-    min-height: 0;
+{    
+  height:100%;    
+  width: 100%;
+}
+#map {
+  height: 100%;
+  width:90%;  
 }
 
 footer
-{ 
-    
+{   
+  max-height: 25%;
+  overflow: scroll;
+  position: relative;    
 }
 
 .ol-viewport {
@@ -49,4 +40,29 @@ footer
 
 #popup {
 	background: white;
+}
+
+.edit {
+  display: none;
+}
+
+td {
+  padding-left: 1em;
+  padding-top: 0.3em;
+}
+td.title {
+  width: 20%;
+  text-align: right;
+  vertical-align: top;
+}
+td.value {
+  width: 80%;
+  vertical-align: top;
+}
+
+#right, #map {
+  float:left;
+}
+#right {
+  max-width: 25%;
 }
