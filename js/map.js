@@ -97,7 +97,7 @@ $(function(){
 
 	var json_textarea = $("#json_string")
 	var update_json_textarea = function(){
-		var geojson = (new ol.format.GeoJSON()).writeFeatures(source.getFeatures());
+		var geojson = JSON.parse((new ol.format.GeoJSON()).writeFeatures(source.getFeatures()));
 		geojson.features.sort(function(a,b){	
 			var a_id = a.properties.id
 			var b_id = b.properties.id
