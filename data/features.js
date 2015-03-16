@@ -919,10 +919,9 @@ var cykelplan_features = {
      "planned_work": "Bredda befintlig gångbana",
      "length": 205,
      "cost": 300000,
-     "comment": "",
-     "status": "antagligen inte(?)",
+     "comment": "",     
      "status_code": -1,
-     "own_comment": "Skulle enligt cykelplanen genomföras 2011. Vad jag kan se på flygbilder verkar det inte gjort. I cykelplanen nämns bara breddning av cykelbanan, jag blir nyfiken/orolig kring tänkt lösning vid anslutning till Dalarövägen.",
+     "own_comment": "Skulle enligt cykelplanen genomföras 2011.\nJag cyklade där och tittade, och tror inte det är gjort. Den är inte skyltat som cykelbana, och är inte tillräckligt brett. Det finns ingen överfart eller anslutning till övriga nätet vid Dalarövägen.\nI cykelplanen nämns bara breddning av gång-/cykelbanan, jag blir nyfiken/orolig kring tänkt lösning vid anslutning till Dalarövägen.",
      "priority": 1
     }
    },
@@ -1921,6 +1920,31 @@ var cykelplan_features = {
       [2020598.2063978014, 8198570.971143992],
       [2020686.722366513, 8198264.856464163],
       [2020698.3122998676, 8198250.349411553],
+
+      
+     ]
+    },
+    "properties": {
+     "id": "59a",
+     "neigborhood": "Landsb",
+     "path_description": "Väg 560 Vitsåvägen mellan Nynäsvägen och Årsta Havsbad",
+     "planned_work": "Ny friliggande gc-väg",
+     "length": 5700,
+     "cost": 22900000,
+     "comment": "Vägverkets väg",     
+     "status_code": -1,
+     "own_comment": "Jag cyklade här med barnen för att bada, det var inte så kul upplevelse. Trist när kusten är så nära men så otillgänglig för familjer på cykel.",
+     "priority": 1
+    }
+   },
+   {
+    "type": "Feature",
+    "geometry": {
+     "type": "LineString",
+     "coordinates": [
+      
+
+      [2020698.3122998676, 8198250.349411553],      
       [2020715.3862521201, 8198245.747207092],
       [2020765.123749406, 8198245.06953328],
       [2020835.5891348564, 8198240.889383296],
@@ -1949,16 +1973,15 @@ var cykelplan_features = {
      ]
     },
     "properties": {
-     "id": "59",
+     "id": "59b",
      "neigborhood": "Landsb",
      "path_description": "Väg 560 Vitsåvägen mellan Nynäsvägen och Årsta Havsbad",
      "planned_work": "Ny friliggande gc-väg",
      "length": 5700,
      "cost": 22900000,
-     "comment": "Vägverkets väg",
-     "status": "delvis genomförd",
+     "comment": "Vägverkets väg",     
      "status_code": 1,
-     "own_comment": "Kommunen(?) har i samband med indragning av kommunalt vatten anlagt GC-bana i själva Årsta Havsbad. Sträckan mellan Årsta Havsbad och existerande cykelbana från Västerhaninge har dock inte påbörjats (eller beslutats?). Jag cyklade med barnen för att bada, var inte så kul upplevelse.",
+     "own_comment": "Kommunen(?) har i samband med indragning av kommunalt vatten anlagt GC-bana i själva Årsta Havsbad. Jag vet i och för sig inte om det är klart då jag inte sett eller läst om resultatet, men det jobbades på det ordentligt förra sommaren.",
      "priority": 1
     }
    },
@@ -2147,7 +2170,7 @@ var cykelplan_features = {
      "comment": "",
      "status": "troligen ej genomförd(?)",
      "status_code": -1,
-     "own_comment": "Cykelplanen angav att sträckan skulle byggas om 2012. Ser inte genomfört ut på flygbilder. Jag minns inte hur det såg ut när jag var där senast?\nSträckan är en huvudgata i Tungelsta, som ansluter centrum/stationen med de västra delarna.",
+     "own_comment": "Cykelplanen angav att sträckan skulle byggas om 2012. Ser inte genomfört ut på flygbilder (som jag inte vet hur gamla de är). Jag minns inte hur det såg ut när jag var där senast?\nSträckan är en huvudgata i Tungelsta, som ansluter centrum/stationen med de västra delarna.",
      "priority": 1
     }
    },
