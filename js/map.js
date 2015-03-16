@@ -1,5 +1,43 @@
 $(function(){
 	var styleCache = {};
+	var getStyle = function(){
+		return function(feature, resolution) {
+	  		
+		    var text = ''+feature.get('priority')+feature.get('status_code');	    
+		    if (!styleCache[text]) {	    	
+		    	var width = 1.5+3-feature.get('priority');
+		    	var color = '#3399CC';
+		    	if (feature.get('priority')==1) {
+		    		switch (feature.get('status_code')){
+		    			case -1:
+		    				color = '#c44';
+		    				break;
+		    			case 0:
+		    				color = '#fa3';
+		    				break;	    			
+		    		}	    			
+		    	}
+		    	if(feature.get('status_code')==1)
+		    		color = '#3c9';
+
+		      	styleCache[text] = [	      		
+	      			new ol.style.Style({
+	        			stroke: new ol.style.Stroke({
+	          				color: "white",
+	          				width: width*1.2
+	        			})	        
+	      			}),
+	      			new ol.style.Style({
+	        			stroke: new ol.style.Stroke({
+	          				color: color,
+	          				width: width
+	        			})	        
+	      			})      			
+		      	];
+		    }
+		    return styleCache[text];
+		}
+	}
 
 	var raster = new ol.layer.Tile({
 		source: new ol.source.MapQuest({layer: 'sat'})
@@ -18,42 +56,7 @@ $(function(){
 
 	var layer = new ol.layer.Vector({
 	  	source: source,
-	  	style: function(feature, resolution) {
-	  		
-	    var text = ''+feature.get('priority')+feature.get('status_code');	    
-	    if (!styleCache[text]) {	    	
-	    	var width = 1.5+3-feature.get('priority');
-	    	var color = '#3399CC';
-	    	if (feature.get('priority')==1) {
-	    		switch (feature.get('status_code')){
-	    			case -1:
-	    				color = '#c44';
-	    				break;
-	    			case 0:
-	    				color = '#fa3';
-	    				break;	    			
-	    		}	    			
-	    	}
-	    	if(feature.get('status_code')==1)
-	    		color = '#3c9';
-
-	      	styleCache[text] = [	      		
-      			new ol.style.Style({
-        			stroke: new ol.style.Stroke({
-          				color: "white",
-          				width: width*1.2
-        			})	        
-      			}),
-      			new ol.style.Style({
-        			stroke: new ol.style.Stroke({
-          				color: color,
-          				width: width
-        			})	        
-      			})      			
-	      	];
-	    }
-	    return styleCache[text];
-	  }	  	
+	  	style: getStyle(),	  	
 	});
 
 	var map = new ol.Map({
