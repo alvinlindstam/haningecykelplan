@@ -165,7 +165,7 @@ $(function(){
 	}
 	select.on('select', function(e){
 		var features = e.target.getFeatures().getArray();
-		
+		$('footer, #right').html("");
 		var html ='';
 		$.each(features, function(index, feature){
 			var props = feature.getProperties();			
@@ -178,15 +178,24 @@ $(function(){
 			})
 			html += "";
 		})
-		$('footer').html("<table \"metadata\">"+html+"</table>");		
+		var node = $('#right')
+		if (window.innerHeight>window.innerWidth){
+			node = $('footer')
+		}
+		node.html("<table \"metadata\">"+html+"</table>");		
 		$(window).resize();
 	});
 	
 	$(window).on('resize', function(){
 		var h = $('header').outerHeight()
 		var f = $('footer').outerHeight();
-		var w = $(window).innerHeight();
-		$(".content, #map").height(w-(h+f));		
+		var ww = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+		var wh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+		$(".content, #map").height(wh-(h+f));		
+		
+		var rw = $('#right').outerWidth()+1
+		rw = rw < 20 ? 0 : rw;
+		$('#map').width(ww-rw)
 		map.updateSize();
 	}).resize()
 

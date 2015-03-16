@@ -20,9 +20,11 @@ header
 .content
 {    
   height:100%;    
+  width: 100%;
 }
 #map {
   height: 100%;
+  width:90%;  
 }
 
 footer
@@ -56,4 +58,11 @@ td.title {
 td.value {
   width: 80%;
   vertical-align: top;
+}
+
+#right, #map {
+  float:left;
+}
+#right {
+  max-width: 25%;
 }
