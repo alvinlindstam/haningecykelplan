@@ -1,4 +1,6 @@
 $(function(){
+	var edit = window.location.hash=="#edit"
+
 	var styleCache = {};
 	var getStyle = function(outline_width){
 		if (typeof(outline_width)!="number")
@@ -73,63 +75,58 @@ $(function(){
 	});
 	map.addInteraction(select);
 	
-	var modify = new ol.interaction.Modify({
-	  	features: select.getFeatures(),	  
-	  	deleteCondition: function(event) {
-	    	return ol.events.condition.shiftKeyOnly(event) &&
-	        	ol.events.condition.singleClick(event);
-	  	}
-	});
-	map.addInteraction(modify);
-
-	var draw;
-	function addDrawInteraction(geom_type) {	  
-	  	draw = new ol.interaction.Draw({
-	    	features: select.getFeatures(),
-	    	type: geom_type
-	  	});
-	  	map.addInteraction(draw);
-		draw.on('drawend', function(ev){
-			ev.feature.setProperties({'id': prompt("Ange ID")})
-	  		source.addFeature(ev.feature);
-	  		setTimeout(function(){
-	  			map.removeInteraction(draw);
-	  		}, 200);	
-	  	});
-	}
-
-	$(".initDrawInteraction").click(function(event){
-		addDrawInteraction($(event.target).data("geomtype"))		
-	});	
-
-	var json_textarea = $("#json_string")
-	var update_json_textarea = function(){
-		var geojson = JSON.parse((new ol.format.GeoJSON()).writeFeatures(source.getFeatures()));
-		geojson.features.sort(function(a,b){	
-			var a_id = a.properties.id
-			var b_id = b.properties.id
-			var diff = parseFloat(a_id) - parseFloat(b_id)			
-			if(diff==0)				
-				return a_id>b_id ? 1 : (a_id<b_id ? -1 : 0)					
-			return diff
+	if(edit)
+	{	
+		$('.edit').show();
+		var modify = new ol.interaction.Modify({
+		  	features: select.getFeatures(),	  
+		  	deleteCondition: function(event) {
+		    	return ol.events.condition.shiftKeyOnly(event) &&
+		        	ol.events.condition.singleClick(event);
+		  	}
 		});
-		feature_data_as_string = JSON.stringify({"object":geojson}, null, 1);
-		feature_data_as_string = feature_data_as_string.replace(/\[\s*([0-9\.]+),\s*([0-9\.]+)\s*\]/g, "[$1, $2]")
-		json_textarea.val("var cykelplan_features = " + feature_data_as_string);
-	};
-	source.on('change', update_json_textarea);
-	update_json_textarea();
+		map.addInteraction(modify);
 
 
+		var draw;
+		function addDrawInteraction(geom_type) {	  
+		  	draw = new ol.interaction.Draw({
+		    	features: select.getFeatures(),
+		    	type: geom_type
+		  	});
+		  	map.addInteraction(draw);
+			draw.on('drawend', function(ev){
+				ev.feature.setProperties({'id': prompt("Ange ID")})
+		  		source.addFeature(ev.feature);
+		  		setTimeout(function(){
+		  			map.removeInteraction(draw);
+		  		}, 200);	
+		  	});
+		}
 
-	var element = document.getElementById('popup');
+		$(".initDrawInteraction").click(function(event){
+			addDrawInteraction($(event.target).data("geomtype"))		
+		});	
 
-	var popup = new ol.Overlay({
-	  element: element,
-	  positioning: 'bottom-center',
-	  stopEvent: false
-	});
-	map.addOverlay(popup);
+		var json_textarea = $("#json_string")
+		var update_json_textarea = function(){
+			var geojson = JSON.parse((new ol.format.GeoJSON()).writeFeatures(source.getFeatures()));
+			geojson.features.sort(function(a,b){	
+				var a_id = a.properties.id
+				var b_id = b.properties.id
+				var diff = parseFloat(a_id) - parseFloat(b_id)			
+				if(diff==0)				
+					return a_id>b_id ? 1 : (a_id<b_id ? -1 : 0)					
+				return diff
+			});
+			feature_data_as_string = JSON.stringify({"object":geojson}, null, 1);
+			feature_data_as_string = feature_data_as_string.replace(/\[\s*([0-9\.]+),\s*([0-9\.]+)\s*\]/g, "[$1, $2]")
+			json_textarea.val("var cykelplan_features = " + feature_data_as_string);
+		};
+		source.on('change', update_json_textarea);
+		update_json_textarea();
+	}
+	
 
 
 

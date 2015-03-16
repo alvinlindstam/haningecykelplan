@@ -51,6 +51,9 @@ footer
 	background: white;
 }
 
+.edit {
+  display: none;
+}
 
 td {
   padding-left: 1em;
