@@ -1701,29 +1701,65 @@ var cykelplan_features = {
     "geometry": {
      "type": "LineString",
      "coordinates": [
-      [2013014.2284417953, 8206618.893011395],
-      [2013067.9732273084, 8206464.824626257],
-      [2013056.0299416387, 8206432.577754949],
-      [2013011.8397846613, 8206380.027298003],
-      [2012992.73052759, 8206315.5335553875],
-      [2013009.4511275275, 8206253.428469906],
-      [2013059.6129273397, 8206180.574427322],
       [2013129.0713723868, 8206108.202160717],
+      [2013227.4647251547, 8205995.6781173125],
       [2013242.345198084, 8205982.315885207],
+      [2013265.0860750144, 8205970.895799551],
       [2013287.7296836283, 8205965.595285269],
-      [2013330.7255120387, 8205957.234985301],
-      [2013378.4986547169, 8205901.1015426535],
-      [2013539.7330112567, 8205692.094043438]
+      [2013314.3521284012, 8205963.43124601],
+      [2013330.1769819134, 8205958.3553496],
+      [2013343.911760433, 8205943.724824657],
+      [2013367.7983317722, 8205915.658103333],
+      [2013394.9693066704, 8205874.453767773],
+      [2013506.0791861643, 8205720.012154953],
+      [2013544.2977003069, 8205682.987969377]
      ]
     },
     "properties": {
-     "id": "53",
+     "id": "53a",
+     "neigborhood": "Tungelsta",
+     "path_description": "Gc-väg mellan Tungelstavägen förbi Håga industriområde och över järnvägsspår",
+     "path_etapp": "Nederstaleden-cykelbana mot Verkstadsvägen (över spåren)",
+     "planned_work": "Ny friliggande gc-väg",
+     "length": 580,
+     "cost": 8000000,
+     "comment": "",
+     "status_code": 1,
+     "own_comment": "Detta genomfördes i samband med bygget av dubbelspår mellan Västerhaninge och Tungelsta. Jag vet inte om det var kommunen eller Trafikverket som betalade och/eller beslutade om utformning.\nCykelbanan är ca 2 meter bred, alltså märkbart mindre än cykelplanens minsta bredd på 3 meter. Rampen upp på brons södra sida är besvärlig med smala utrymmen och skarpa svängar. Med vanlig cykel är det bökigt, med större ekipage (som min lådcykel, eller kanske de med cykelvagn) går det knappt att komma runt utan att gå av.\nVärt att notera är att det här är en av de två åtgärder i cykelplanen som har exceptionellt högt meterpris. Jag antar att det beror på bron. Men jag förstår inte varför man lägger flera miljoner på bron och inte de småpengar (i sammanhanget) det skulle kosta att bygga klart den norra delen till Tungelstavägen.",
+     "priority": 3
+    }
+   },
+   {
+    "type": "Feature",
+    "geometry": {
+     "type": "LineString",
+     "coordinates": [
+      [2013016.665733083, 8206615.833225693],
+      [2013065.0360400446, 8206477.2911119275],
+      [2013067.7232793204, 8206459.077601281],
+      [2013061.7516364858, 8206443.2527477695],
+      [2013047.4196936823, 8206423.546326415],
+      [2013029.5047651778, 8206403.83990506],
+      [2013011.8397846613, 8206380.027298003],
+      [2012999.04938672, 8206352.483776677],
+      [2012994.2720724521, 8206326.805712488],
+      [2012993.077743885, 8206306.502126849],
+      [2013001.438043854, 8206267.08928414],
+      [2013009.201179539, 8206244.397041368],
+      [2013028.3104366108, 8206218.121812896],
+      [2013059.6129273397, 8206180.574427322],
+      [2013129.0713723868, 8206108.202160717]
+     ]
+    },
+    "properties": {
+     "id": "53b",
      "neigborhood": "Tungelsta",
      "path_description": "Gc-väg mellan Tungelstavägen förbi Håga industriområde och över järnvägsspår",
      "planned_work": "Ny friliggande gc-väg",
      "length": 580,
      "cost": 8000000,
      "comment": "",
+     "status_code": -1,
      "priority": 3
     }
    },
@@ -1797,7 +1833,8 @@ var cykelplan_features = {
       [2010608.2694558168, 8203583.661162059],
       [2010644.6964771105, 8203629.642811892],
       [2013450.174280887, 8205669.854586387],
-      [2013471.6721950923, 8205680.60354349],
+      [2013461.4411559736, 8205676.717744391],
+      [2013470.9957845092, 8205679.106401525],
       [2013503.9190664, 8205677.020557789]
      ]
     },
@@ -1809,7 +1846,8 @@ var cykelplan_features = {
      "length": 1850,
      "cost": 7400000,
      "comment": "",
-     "priority": 2
+     "priority": 2,
+     "status_code": 1
     }
    },
    {
@@ -2413,9 +2451,14 @@ var cykelplan_features = {
     "geometry": {
      "type": "LineString",
      "coordinates": [
-      [2013127.87704382, 8206108.202160717],
-      [2013091.3336336303, 8206086.206224124],
-      [2013047.143476653, 8206069.485624187],
+      [2013129.0713723868, 8206108.202160717],
+      [2013107.78960983, 8206094.003620546],
+      [2013092.2633384597, 8206087.136231286],
+      [2013077.035649231, 8206082.657499161],
+      [2013060.6136314352, 8206077.880184893],
+      [2013049.8646743326, 8206072.804288483],
+      [2013041.8029565057, 8206065.638317081],
+      [2013015.5277280326, 8206042.647492168],
       [2012930.0992770914, 8205981.105310231],
       [2012912.184348587, 8205981.702474515]
      ]
@@ -2428,6 +2471,7 @@ var cykelplan_features = {
      "length": 100,
      "cost": 400000,
      "comment": "",
+     "status_code": -1,
      "priority": 3
     }
    }
