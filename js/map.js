@@ -161,6 +161,9 @@ $(function(){
 		},
 		"cost_per_meter": function(properties){
 			return Math.round(properties.cost/properties['length']);		
+		},
+		"own_comment": function(properties){
+			return properties.own_comment.replace(/\n/g, "<br/><br/>");
 		}
 	}
 	select.on('select', function(e){
@@ -171,7 +174,7 @@ $(function(){
 			var props = feature.getProperties();			
 			$.each(display_keys, function(key, title){
 				var value = props[key]
-				if(display_transformers[key])
+				if(display_transformers[key] && props[key])
 					value = display_transformers[key](props)
 				if(value!=undefined&&value!="")					
 					html += "<tr><td class=\"title\">"+title+"</td><td class=\"value\">"+value+"</td></tr>";
