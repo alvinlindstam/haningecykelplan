@@ -179,11 +179,16 @@ $(function(){
 			html += "";
 		})
 		$('footer').html("<table \"metadata\">"+html+"</table>");		
-		map.updateSize();
+		$(window).resize();
 	});
 	
 	$(window).on('resize', function(){
+		var h = $('header').outerHeight()
+		var f = $('footer').outerHeight();
+		var w = $(window).innerHeight();
+		$(".content, #map").height(w-(h+f));		
 		map.updateSize();
-	})
+	}).resize()
+
 	
 });
