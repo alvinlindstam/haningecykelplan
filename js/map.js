@@ -1,9 +1,11 @@
 $(function(){
 	var styleCache = {};
-	var getStyle = function(){
+	var getStyle = function(outline_width){
+		if (typeof(outline_width)!="number")
+			outline_width = 1.2
 		return function(feature, resolution) {
 	  		
-		    var text = ''+feature.get('priority')+feature.get('status_code');	    
+		    var text = ''+feature.get('priority')+feature.get('status_code')+outline_width;	    
 		    if (!styleCache[text]) {	    	
 		    	var width = 1.5+3-feature.get('priority');
 		    	var color = '#3399CC';
@@ -24,7 +26,7 @@ $(function(){
 	      			new ol.style.Style({
 	        			stroke: new ol.style.Stroke({
 	          				color: "white",
-	          				width: width*1.2
+	          				width: width*outline_width
 	        			})	        
 	      			}),
 	      			new ol.style.Style({
@@ -66,7 +68,9 @@ $(function(){
 
 	map.getView().fitExtent(source.getExtent(), map.getSize());	
 
-	var select = new ol.interaction.Select();
+	var select = new ol.interaction.Select({
+		style: getStyle(2)
+	});
 	map.addInteraction(select);
 	
 	var modify = new ol.interaction.Modify({
