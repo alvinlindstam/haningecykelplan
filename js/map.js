@@ -61,7 +61,7 @@ $(function(){
 	  	style: getStyle(),	  	
 	});
 
-	var map = new ol.Map({
+	map = new ol.Map({
 	  	layers: [bing, layer],
 	  	target: 'map'	  	
 	});
@@ -131,24 +131,62 @@ $(function(){
 	});
 	map.addOverlay(popup);
 
-	// display popup on click
-	/*map.on('singleclick', function(evt) {
-		var element = document.getElementById('popup');
-	  	var feature = map.forEachFeatureAtPixel(evt.pixel,
-	      	function(feature, layer) {
-	        	return feature;
-	    	}
-	    );
-	  	if (feature) {
-		    var geometry = feature.getGeometry();	    
-		    var properties = feature.getProperties();
-		    $(element).find('table').html("")	    
-		    for(key in properties){
-		    	$(element).find('table').append('<tr><td>'+key+'</td><td>'+properties[key]+"</td></tr>");
-		    }		    
-		    popup.setPosition(geometry.getCoordinates()[0]);
-	  	} else {
-	  		popup.setPosition();	    	
-	  	}
-	});*/
+
+
+
+	var display_keys = {		
+	    "path_description": "Sträcka",	    
+	    "planned_work": "Planerad åtgärd",
+	    "neigborhood": "Område",
+	    "priority": "Prioritet",
+	    "id": "ID (nummer i cykelplanen)",
+	    "length": "Planerad längd (m)",
+	    "cost": "Beräknad kostnad (kr)",
+	    "cost_per_meter": "Beräknad kostnad per meter (kr)",
+	    "path_etapp": "Delsträcka som denna linje avser",
+	    "comment": "Kommentar i cykelplanen",	    
+	    "status_code": "Status",
+	    "own_comment": "Min kommentar",	    
+	}
+	var display_transformers = {
+		"status_code": function(properties){
+			var val = properties.status_code;
+			if (val<0)
+				return "Ej genomförd"
+			if (val==0)
+				return ""
+			if (val>0)
+				return "Genomförd"
+		},
+		"priority": function(properties){
+			var texts = ['', "1 - Genomförs 2011-2015", "2 - Genomförs 2016-2020", "3 - Genomförs 2021-2030"];
+			return texts[properties.priority]
+		},
+		"cost_per_meter": function(properties){
+			return Math.round(properties.cost/properties['length']);		
+		}
+	}
+	select.on('select', function(e){
+		var features = e.target.getFeatures().getArray();
+		
+		var html ='';
+		$.each(features, function(index, feature){
+			var props = feature.getProperties();			
+			$.each(display_keys, function(key, title){
+				var value = props[key]
+				if(display_transformers[key])
+					value = display_transformers[key](props)
+				if(value!=undefined&&value!="")					
+					html += "<tr><td class=\"title\">"+title+"</td><td class=\"value\">"+value+"</td></tr>";
+			})
+			html += "";
+		})
+		$('footer').html("<table \"metadata\">"+html+"</table>");		
+		map.updateSize();
+	});
+	
+	$(window).on('resize', function(){
+		map.updateSize();
+	})
+	
 });

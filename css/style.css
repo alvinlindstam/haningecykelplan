@@ -50,3 +50,18 @@ footer
 #popup {
 	background: white;
 }
+
+
+td {
+  padding-left: 1em;
+  padding-top: 0.3em;
+}
+td.title {
+  width: 20%;
+  text-align: right;
+  vertical-align: top;
+}
+td.value {
+  width: 80%;
+  vertical-align: top;
+}
