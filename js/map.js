@@ -166,10 +166,31 @@ $(function(){
 			return properties.own_comment.replace(/\n/g, "<br/><br/>");
 		}
 	}
+	// First, checks if it isn't implemented yet.
+	if (!String.prototype.format) {
+	  String.prototype.format = function() {
+	    var args = arguments;
+	    return this.replace(/{(\d+)}/g, function(match, number) { 
+	      return typeof args[number] != 'undefined'
+	        ? args[number]
+	        : match
+	      ;
+	    });
+	  };
+	}
 	select.on('select', function(e){
 		var features = e.target.getFeatures().getArray();
 		$('footer, #right').html("");
-		var html ='';
+		var html ='';		
+		if (window.innerHeight>window.innerWidth){
+			var node = $('footer')
+			var f_string = "<tr><td class=\"title\">{0}</td><td class=\"value\">{1}</td></tr>"
+			var outer_string ="<table \"metadata\">{0}</table>";
+		}else{
+			var node = $('#right');		
+			var f_string = "<h3>{0}</h3><p>{1}<p>"
+			var outer_string ="{0}"
+		}
 		$.each(features, function(index, feature){
 			var props = feature.getProperties();			
 			$.each(display_keys, function(key, title){
@@ -177,15 +198,12 @@ $(function(){
 				if(display_transformers[key] && props[key])
 					value = display_transformers[key](props)
 				if(value!=undefined&&value!="")					
-					html += "<tr><td class=\"title\">"+title+"</td><td class=\"value\">"+value+"</td></tr>";
+					html += f_string.format(title, value);
 			})
-			html += "";
+			//html += "";
 		})
-		var node = $('#right')
-		if (window.innerHeight>window.innerWidth){
-			node = $('footer')
-		}
-		node.html("<table \"metadata\">"+html+"</table>");		
+		
+		node.html(outer_string.format(html));		
 		$(window).resize();
 	});
 	
