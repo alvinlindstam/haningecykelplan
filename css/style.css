@@ -60,6 +60,12 @@ td.value {
   vertical-align: top;
 }
 
+#right {
+  padding: 0 1em;
+}
+#right p{
+  margin-bottom:0.3em;
+}
 #right, #map {
   float:left;
 }

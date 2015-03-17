@@ -293,8 +293,8 @@ var cykelplan_features = {
      "cost": 1400000,
      "comment": "",
      "status": "okänd",
-     "status_code": 0,
-     "own_comment": "Enligt cykelplanen skulle det genomföras 2012. Oklart om det gjorts eller ej tills jag kollat området eller hittat annan uppgift.\nDen föreslagna åtgärden låter futtig, och jag undrar hur de ser till att korsningar, busshållplatser mm funkar bra.",
+     "status_code": -1,
+     "own_comment": "Enligt cykelplanen skulle det genomföras 2012. \nDen föreslagna åtgärden låter futtig, och jag undrar hur de ser till att korsningar, busshållplatser mm funkar bra.",
      "priority": 1
     }
    },
@@ -323,7 +323,7 @@ var cykelplan_features = {
      "comment": "",
      "status": "antagligen ej genomförd",
      "status_code": -1,
-     "own_comment": "Skulle enligt cykelplan genomföras 2012. Vad jag kan se på flygbilder verkar det inte ha byggts något än (när togs bilderna?).\nVarför är det här en Prio 1-sträcka?",
+     "own_comment": "Skulle enligt cykelplan genomföras 2012.\nVarför är det här en Prio 1-sträcka?",
      "priority": 1
     }
    },
@@ -618,8 +618,8 @@ var cykelplan_features = {
      "cost": 250000,
      "comment": "",
      "status": "okänd",
-     "status_code": 0,
-     "own_comment": "Enligt cykelplanen skulle åtgärden genomföras 2012.\nSträckan förbinder en badplats med vägnät och bostadsområde. Enkel grusstig.",
+     "status_code": 1,
+     "own_comment": "Enligt cykelplanen skulle åtgärden genomföras 2012.\nTyvärr har man valt att blockera sträckan på ett ställe med stora betongblock vilket omöjliggör passage för lastcyklar, permobiler, etc och innebär en risk för alla cyklister. Förmodligen för att eliminera biltrafik men man har gjort det på fel sätt. Sträckan är dessutom utan belysning och hindren saknar ordentliga reflexer.\nCykelplanen är väldigt tydlig med att hinder på cykelbanor är farligt, och bara ska användas restriktivt och då med bra reflexer och belysning.\nSträckan förbinder en badplats med vägnät och bostadsområde. Var tidigare enkel grusstig.",
      "priority": 1
     }
    },
@@ -1563,6 +1563,8 @@ var cykelplan_features = {
      "length": 330,
      "cost": 1200000,
      "comment": "",
+     "status_code": -1,
+     "own_comment": "I cykelplanen är området öster om den planerade sträckningenm, mellan norra Västerhaninge och Jorbro industriområde markerad som \"framtida bostadsområde\". \nJag vet inte om det fortfarande är aktuellt, annars är kanske nyttan av den här sträckningen ganska begränsad. Några få boende får närmare väg med denna sträckningen, och friluftsområdet Ängarna blir mer tillgängligt.",
      "priority": 3
     }
    },
