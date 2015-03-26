@@ -163,7 +163,8 @@ $(function(){
 			return Math.round(properties.cost/properties['length']);		
 		},
 		"own_comment": function(properties){
-			return properties.own_comment.replace(/\n/g, "<br/><br/>");
+			if (properties.own_comment)
+				return properties.own_comment.replace(/\n/g, "<br/><br/>");
 		}
 	}
 	// First, checks if it isn't implemented yet.
@@ -195,7 +196,7 @@ $(function(){
 			var props = feature.getProperties();			
 			$.each(display_keys, function(key, title){
 				var value = props[key]
-				if(display_transformers[key] && props[key])
+				if(display_transformers[key])
 					value = display_transformers[key](props)
 				if(value!=undefined&&value!="")					
 					html += f_string.format(title, value);
