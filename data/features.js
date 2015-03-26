@@ -333,9 +333,13 @@ var cykelplan_features = {
      "type": "LineString",
      "coordinates": [
       [2025907.1563959762, 8222531.725112942],
-      [2025810.4157820528, 8222458.871070358],
-      [2025713.6751681294, 8222405.126284844],
-      [2025615.740225639, 8222357.3531421665],
+      [2025877.7847253378, 8222521.19552564],
+      [2025805.442768595, 8222462.242069223],
+      [2025760.0582830505, 8222433.876765758],
+      [2025708.28223986, 8222409.782551346],
+      [2025675.890011215, 8222395.107465153],
+      [2025583.4621302998, 8222355.955881818],
+      [2025566.144366079, 8222350.581403267],
       [2025548.8578258895, 8222348.992842197]
      ]
     },
@@ -348,8 +352,8 @@ var cykelplan_features = {
      "cost": 700000,
      "comment": "",
      "status": "okänd",
-     "status_code": 0,
-     "own_comment": "Väg- och ledningsarbete pågår 2015.\nBreddning av körbana nämns i planerade åtgärden, jag hoppas inte hela ombyggnationen bokförs som \"cykelsatsning\"",
+     "status_code": 1,
+     "own_comment": "Vägarbetet är genomfört nästan hela sträckan, men är ännu inte klart (mars 2015). Utanför vårdcentralen byggs en timglashållplats för busstrafiken, resten av sträckan är färdigbyggd vad gäller den hårda ytan men målning och detaljer återstår.\nÄven här har man avvikit från cykelplanens krav på avstånd till hinder. Belysningsstolpar står helt invid cykelbanan, i stället för de 40 cm som cykelplanen kräver.\n Den nya cykelbanan såg ut att uppfylla cykelbanans krav på 3 meters bredd, men jag är osäker på hur det kommer bli vid busshållplatsen. Om de ska placera ut ett väderskydd blir det nog för smalt.\nBreddning av körbana nämns i planerade åtgärden, jag hoppas inte hela ombyggnationen bokförs som \"cykelsatsning\"",
      "priority": 1
     }
    },
@@ -919,7 +923,7 @@ var cykelplan_features = {
      "planned_work": "Bredda befintlig gångbana",
      "length": 205,
      "cost": 300000,
-     "comment": "",     
+     "comment": "",
      "status_code": -1,
      "own_comment": "Skulle enligt cykelplanen genomföras 2011.\nJag cyklade där och tittade, och tror inte det är gjort. Den är inte skyltat som cykelbana, och är inte tillräckligt brett. Det finns ingen överfart eller anslutning till övriga nätet vid Dalarövägen.\nI cykelplanen nämns bara breddning av gång-/cykelbanan, jag blir nyfiken/orolig kring tänkt lösning vid anslutning till Dalarövägen.",
      "priority": 1
@@ -1925,9 +1929,7 @@ var cykelplan_features = {
       [2020574.4931938672, 8198633.326658947],
       [2020598.2063978014, 8198570.971143992],
       [2020686.722366513, 8198264.856464163],
-      [2020698.3122998676, 8198250.349411553],
-
-      
+      [2020698.3122998676, 8198250.349411553]
      ]
     },
     "properties": {
@@ -1937,7 +1939,7 @@ var cykelplan_features = {
      "planned_work": "Ny friliggande gc-väg",
      "length": 5700,
      "cost": 22900000,
-     "comment": "Vägverkets väg",     
+     "comment": "Vägverkets väg",
      "status_code": -1,
      "own_comment": "Jag cyklade här med barnen för att bada, det var inte så kul upplevelse. Trist när kusten är så nära men så otillgänglig för familjer på cykel.",
      "priority": 1
@@ -1948,9 +1950,7 @@ var cykelplan_features = {
     "geometry": {
      "type": "LineString",
      "coordinates": [
-      
-
-      [2020698.3122998676, 8198250.349411553],      
+      [2020698.3122998676, 8198250.349411553],
       [2020715.3862521201, 8198245.747207092],
       [2020765.123749406, 8198245.06953328],
       [2020835.5891348564, 8198240.889383296],
@@ -1985,7 +1985,7 @@ var cykelplan_features = {
      "planned_work": "Ny friliggande gc-väg",
      "length": 5700,
      "cost": 22900000,
-     "comment": "Vägverkets väg",     
+     "comment": "Vägverkets väg",
      "status_code": 1,
      "own_comment": "Kommunen(?) har i samband med indragning av kommunalt vatten anlagt GC-bana i själva Årsta Havsbad. Jag vet i och för sig inte om det är klart då jag inte sett eller läst om resultatet, men det jobbades på det ordentligt förra sommaren.",
      "priority": 1
