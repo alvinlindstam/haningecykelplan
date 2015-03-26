@@ -2018,7 +2018,7 @@ var cykelplan_features = {
      "cost": 3200000,
      "comment": "",
      "status": "troligen ej genomförd(?)",
-     "status_code": -1,
+     "status_code": 0,
      "own_comment": "Cykelplanen angav att sträckan skulle byggas om 2014. Ser inte genomfört ut på flygbilder. Jag minns inte hur det såg ut när jag var där senast?\nSträckan är en huvudgata i Tungelsta, som ansluter centrum/stationen med de östra delarna.\nAlltid oroväckande när breddning av körbana anges som åtgärd i cykeplan. Bokförs hela ombyggnationen som cykelsatsning?",
      "priority": 1
     }
@@ -2072,7 +2072,7 @@ var cykelplan_features = {
      "cost": 2200000,
      "comment": "",
      "status": "troligen ej genomförd",
-     "status_code": -1,
+     "status_code": 0,
      "own_comment": "Ska enligt cykelplan genomföras 2015.",
      "priority": 1
     }
@@ -2120,9 +2120,8 @@ var cykelplan_features = {
      "planned_work": "Gång-cykelbana på befintlig körbana",
      "length": 205,
      "cost": 600000,
-     "comment": "",
-     "status": "ej genomförd",
-     "status_code": -1,
+     "comment": "",     
+     "status_code": 0,
      "own_comment": "Skulle enligt cykelplanen genomföras 2011.",
      "priority": 1
     }
@@ -2175,7 +2174,7 @@ var cykelplan_features = {
      "cost": 400000,
      "comment": "",
      "status": "troligen ej genomförd(?)",
-     "status_code": -1,
+     "status_code": 0,
      "own_comment": "Cykelplanen angav att sträckan skulle byggas om 2012. Ser inte genomfört ut på flygbilder (som jag inte vet hur gamla de är). Jag minns inte hur det såg ut när jag var där senast?\nSträckan är en huvudgata i Tungelsta, som ansluter centrum/stationen med de västra delarna.",
      "priority": 1
     }
