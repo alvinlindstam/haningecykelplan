@@ -9,7 +9,7 @@ $(function(){
 	  		
 		    var text = ''+feature.get('priority')+feature.get('status_code')+outline_width;	    
 		    if (!styleCache[text]) {	    	
-		    	var width = 1.5+3-feature.get('priority');
+		    	var width = 6-feature.get('priority');
 		    	var color = '#3399CC';
 		    	if (feature.get('priority')==1) {
 		    		switch (feature.get('status_code')){

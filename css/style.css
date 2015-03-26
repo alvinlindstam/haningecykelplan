@@ -62,6 +62,8 @@ td.value {
 
 #right {
   padding: 0 1em;
+  overflow: scroll;
+  height: 100%;
 }
 #right p{
   margin-bottom:0.3em;
