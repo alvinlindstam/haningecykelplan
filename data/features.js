@@ -1600,6 +1600,8 @@ var cykelplan_features = {
      "length": 1100,
      "cost": 1600000,
      "comment": "",
+     "status_code": -1,
+     "own_comment": "Vägen är idag en av Åbys huvudsakliga tillfartsvägar, men saknar cykelväg. Den tillåtna hastigheten har sänkts från 50 till 40 km/h.\nDetaljplanerarbete för att bygga en större förskola väster om vägen borde innebära ökat behov, och att cykelväg byggs senast i samband med dess invigning.\nNär det blir dags för ombyggnad är det viktigt att se till så att inte bara gångbanan breddas, utan att den också anpassas för cykeltrafik vid korsningar och busshållplatser.",
      "priority": 3
     }
    },
@@ -1648,6 +1650,8 @@ var cykelplan_features = {
      "length": 280,
      "cost": 400000,
      "comment": "Vägverkets väg",
+     "status_code": -1,
+     "own_comment": "I dag finns bara en mycket smal gångbana, och alternativa färdvägar är märkbara omvägar. Det förekommer att folk cyklar på trottoaren, jag vet inte om det är av missnöje eller brist på vägvisning.\nJag tycker det är konstigt att man i cykelplanen inte föreslog att Nynäsvägens cykelstråk ska fortsätta längs med Nynäsvägen hela vägen mellan Åbyplan och existerande stråk vid ICA. I stället avviker stråket, med tvära kurvor, och lägger sig längs med järnvägen några hundra meter. Det uppfyller inte regionala cykelstråksstandarden, innebär en omväg och onödiga höjdskillnader och konfliktpunkter med fotgängare (främst vid järnvägsstationen). Som det är nu använder jag Nynäsvägens körbana när jag cyklar mellan ICA/Tungelsta och Åby.",
      "priority": 2
     }
    },
